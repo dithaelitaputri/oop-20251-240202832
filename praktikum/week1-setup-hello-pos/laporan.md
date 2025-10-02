@@ -2,12 +2,12 @@
 Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
 
 ## Identitas
-- Nama  : [Nama Mahasiswa]
-- NIM   : [NIM Mahasiswa]
-- Kelas : [Kelas]
+- Nama  : Hanifah
+- NIM   : 240202864
+- Kelas : 3 IKRA
 
 ---
-
+ 
 ## Tujuan
 (Tuliskan tujuan praktikum minggu ini.  
 Contoh: *Mahasiswa memahami konsep class dan object serta dapat membuat class Produk dengan enkapsulasi.*)
