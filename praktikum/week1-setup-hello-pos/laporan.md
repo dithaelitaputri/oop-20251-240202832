@@ -1,10 +1,10 @@
 # Laporan Praktikum Minggu 1 (sesuaikan minggu ke berapa?)
-Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
+Topik: Tuliskan judul topik, misalnya "Class dan Object"
 
 ## Identitas
-- Nama  : [Ditha Elita Putri]
-- NIM   : [240202832]
-- Kelas : [3IKRA]
+- Nama  : Ditha Elita Putri
+- NIM   : 240202832
+- Kelas : 3IKRA
 
 ---
 
@@ -34,17 +34,62 @@ Contoh:
 ## Kode Program
 (Tuliskan kode utama yang dibuat, contoh:  
 
-```java
-// Contoh
-Produk p1 = new Produk("BNH-001", "Benih Padi", 25000, 100);
-System.out.println(p1.getNama());
+Prosedural
 ```
-)
----
+// HelloProcedural.java
+public class HelloProcedural {
+   public static void main(String[] args) {
+      String nim = "240202832";
+      String nama = "Ditha Elita Putri";
+      System.out.println("Hello World, I am "+ nama + ", "+ nim);
+   }
+}
+
+```
+
+OOP
+
+```
+
+// HelloOOP.java
+class Mahasiswa {
+   String nama;
+   int nim;
+   Mahasiswa(String m, int n) {
+      this.nama = m;
+      this.nim = n;
+   }
+   void sapa(){System.out.println("Hallo World, I am " + nama + ", "+ nim);}
+}
+
+public class HelloOOP {
+   public static void main(String[] args) {
+      Mahasiswa m = new Mahasiswa ( "Ditha Elita Putri", 240202832);
+      m.sapa();
+   }}
+
+```
+
+Functional
+
+```
+
+// HelloFunctional.java
+import java.util.function.BiConsumer;
+public class HelloFunctional {
+
+public static void main(String[] args) {
+    BiConsumer<String, Integer> sapa= (nama, nim)-> System.out.println("Hallo World, I am "+ nama+", "+ nim);
+    sapa.accept("Ditha Elita Putri", 240202832);
+    }
+}
+
+```
 
 ## Hasil Eksekusi
-(Sertakan screenshot hasil eksekusi program.  
-![Screenshot hasil](screenshots/hasil.png)
+
+![Screenshot Prosedural](<img width="799" height="503" alt="HelloProcedural_ditha" src="https://github.com/user-attachments/assets/2ac8c929-e8d3-4213-9718-9f5baadb2bc2" />
+)
 )
 ---
 
