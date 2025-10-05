@@ -1,5 +1,5 @@
 # Laporan Praktikum Minggu 1 (sesuaikan minggu ke berapa?)
-Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
+Topik: Pengenalan Paradigma dan Setup Proyek
 
 ## Identitas
 - Nama  : Hanifah
@@ -9,25 +9,28 @@ Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
 ---
  
 ## Tujuan
-(Tuliskan tujuan praktikum minggu ini.  
-Contoh: *Mahasiswa memahami konsep class dan object serta dapat membuat class Produk dengan enkapsulasi.*)
+(Tuliskan tujuan praktikum minggu ini.   
+    1. Mahasiswa mampu mendefinisikan paradigma prosedural, OOP, dan fungsional.
+    2. Mahasiswa mampu membandingkan kelebihan dan keterbatasan tiap paradigma.
+    3. Mahasiswa mampu memberikan contoh program sederhana untuk masing-masing paradigma.
+    4. Mahasiswa aktif dalam diskusi kelas (bertanya, menjawab, memberi opini).
+
 
 ---
 
 ## Dasar Teori
 (Tuliskan ringkasan teori singkat (3–5 poin) yang mendasari praktikum.  
-Contoh:  
-1. Class adalah blueprint dari objek.  
-2. Object adalah instansiasi dari class.  
-3. Enkapsulasi digunakan untuk menyembunyikan data.)
+Paradigma pemrograman adalah pendekatan atau gaya dalam menulis dan mengorganisasi kode program.
+Setup proyek adalah langkah awal dalam membangun lingkungan kerja yang siap untuk pengembangan perangkat lunak.
 
 ---
 
 ## Langkah Praktikum
-(Tuliskan Langkah-langkah dalam prakrikum, contoh:
-1. Langkah-langkah yang dilakukan (setup, coding, run).  
-2. File/kode yang dibuat.  
-3. Commit message yang digunakan.)
+1. Persiapkan Lingkungan :Pastikan JDK sudah terpasang.Jika belum terpasang, download dan install JDK dari https://www.oracle.com/java/technologies/javase-downloads.html
+2. Buat File Program : Buka teks editor, ketik kode dan simpan dengan nama HelloProcedural.java
+3. Kompilasi Program : Buka terminal dan arahkan ke direktori tempat file disimpan, lalu jalankan kode javac HelloProcedural.java
+maka akan terbentuk file HelloProcedural.class.
+4. Jalankan Program : Jika berhasil akan muncul otput sesuai program 
 
 ---
 
@@ -35,16 +38,32 @@ Contoh:
 (Tuliskan kode utama yang dibuat, contoh:  
 
 ```java
-// Contoh
-Produk p1 = new Produk("BNH-001", "Benih Padi", 25000, 100);
-System.out.println(p1.getNama());
+ HelloProcedural.java
+public class HelloProcedural {
+   public static void main(String[] args) {
+      String nim = "240202864";
+      String nama = "Hanifah";
+      String[] produk = {"Beras", "Pupuk", "Benih"};
+      int[] harga = {10000, 15000, 12000};
+      int total = 0;
+      System.out.println("Hello World, I am Hanifah-240202864");
+      System.out.println("NIM: " + nim + ", Nama: " + nama);
+      System.out.println("Daftar Produk:");
+      for (int i = 0; i < produk.length; i++) {
+         System.out.println("- " + produk[i] + ": " + harga[i]);
+         total += harga[i];
+      }
+      System.out.println("Total harga semua produk: " + total);
+   }
+}
 ```
 )
 ---
 
 ## Hasil Eksekusi
 (Sertakan screenshot hasil eksekusi program.  
-![Screenshot hasil](screenshots/hasil.png)
+<img width="1366" height="768" alt="Cuplikan layar 2025-10-02 163428" src="https://github.com/user-attachments/assets/30b8eacb-f31d-4c72-8b44-afdb5c93dda1" />
+
 )
 ---
 
