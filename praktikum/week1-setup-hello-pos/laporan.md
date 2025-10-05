@@ -131,14 +131,19 @@ public class HelloFunctional {
 ## Analisis
 Jelaskan bagaimana kode berjalan.
   1. Prosedural
+     
   Cara Kerja: Semua logika disusun secara urutan langkah demi langkah (step-by-step). Data (nim, nama, produk, harga) didefinisikan langsung dalam fungsi main.
-
+  
   Proses: Inisialisasi data, Menampilkan output ke layar, Melakukan perhitungan total dengan loop for, Mencetak hasil akhir
-  3. OOP (Object-Oriented Programming)
+ 
+  2. OOP (Object-Oriented Programming)
+     
   Cara Kerja: Program dibangun berdasarkan objek dan kelas (Produk sebagai class). Data dan perilaku dikelompokkan bersama dalam objek.
 
   Proses: Buat objek Produk dengan konstruktor, Simpan dalam array objek, Iterasi array untuk tampilkan data dan hitung total, Output hasil
-  4. Fungsional
+  
+  3. Fungsional
+     
   Cara Kerja: Program ditulis secara deklaratif, fokus pada "apa" yang dilakukan, bukan "bagaimana". Gunakan fitur lambda dan Stream API untuk manipulasi koleksi.
 
   Proses: Definisikan list produk dan harga, Gunakan IntStream.range() untuk menampilkan data, Hitung total dengan stream().mapToInt().sum(), Tampilkan hasil    
