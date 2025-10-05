@@ -96,17 +96,23 @@ public static void main(String[] args) {
 ---
 
 ## Analisis
-(
-- Jelaskan bagaimana kode berjalan.  
-- Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.  
-- Kendala yang dihadapi dan cara mengatasinya.  
+
+##Bagaimana kode berjalan
+- Pada program prosedural, kode jalan langsung dari main lalu print nama dan NIM.
+Pada OOP, saya buat objek mahasiswa, isi data, lalu panggil method untuk menampilkan hasil.
+Pada fungsional, saya pakai lambda (BiConsumer) untuk mendefinisikan fungsi, lalu jalankan dengan accept().
+
+## Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya?
+  Karena ini minggu pertama, belum ada perbedaan dengan minggu sebelumnya. Minggu ini langsung belajar dasar tentang paradigma pemrograman (prosedural, OOP, dan fungsional).
+
+   ##Kendala yang dihadapi dan cara mengatasinya
+- Sempat bingung di bagian OOP (constructor, method) dan fungsional (lambda). Saya atasi dengan melihat contoh dan mencoba ulang sampai berhasil.  
 )
 ---
 
 ## Kesimpulan
-(Tuliskan kesimpulan dari praktikum minggu ini.  
-Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur dan mudah dikembangkan.*)
-
+---
+Setiap paradigma pemrograman punya kelebihan dan kekurangan. Prosedural cocok untuk program kecil dan sederhana, OOP lebih baik untuk aplikasi besar dan kompleks karena terstruktur dengan objek, sedangkan fungsional unggul dalam pengolahan data dan mengurangi kode berulang. Pemilihan paradigma tergantung kebutuhan aplikasi, tingkat kompleksitas, dan tujuan pengembangan agar program lebih mudah dirawat dan dikembangkan.
 ---
 
 ## Quiz
@@ -121,9 +127,9 @@ Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur 
 3. Bagaimana paradigma (prosedural, OOP, fungsional) memengaruhi maintainability dan scalability aplikasi?
    **Jawaban:**
 
-   - * Prosedural: gampang ditulis, tapi susah dirawat kalau program makin besar.
-   * OOP: lebih teratur, gampang dikembangkan, dan mudah diperluas.
-   * Fungsional: kode singkat, minim efek samping, gampang diuji, dan mudah diparalelkan.
+   -  Prosedural: gampang ditulis, tapi susah dirawat kalau program makin besar.
+   - OOP: lebih teratur, gampang dikembangkan, dan mudah diperluas.
+   - Fungsional: kode singkat, minim efek samping, gampang diuji, dan mudah diparalelkan.
 
 4. Mengapa OOP lebih cocok untuk mengembangkan aplikasi POS dibanding prosedural?
    **Jawaban:**
