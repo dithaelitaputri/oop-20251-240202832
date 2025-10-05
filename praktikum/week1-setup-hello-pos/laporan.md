@@ -66,9 +66,9 @@ public class HelloProcedural {
     }
 }
 
-```
 
 2. OOP
+
 ```
 // HelloOOP.java
 class Person {
@@ -92,9 +92,9 @@ public class HelloOOP {
     }
 }
 
-```
 
 3. Fungsional
+   
 ```
 // HelloFunctional.java
 import java.util.function.BiConsumer;
