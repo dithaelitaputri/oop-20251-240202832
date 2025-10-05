@@ -112,11 +112,11 @@ Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur 
 ## Quiz
 1. Apakah OOP selalu lebih baik dari prosedural?
    **Jawaban:**
-   Tidak. OOP bagus untuk program besar karena modular dan bisa dipakai ulang. Tapi untuk program kecil, prosedural lebih simpel dan cepat dibuat.
+   Tidak selalu. OOP bagus kalau programnya besar dan kompleks karena ada konsep objek yang rapi. Tapi kalau program kecil dan sederhana, prosedural bisa lebih cepat dibuat dan lebih mudah.
 
 2. Kapan functional programming lebih cocok digunakan dibanding OOP atau prosedural?
    **Jawaban:**
-   Functional lebih pas saat butuh olah data besar, kerja paralel/asynchronous, atau manipulasi data dengan cara deklaratif seperti filter, map, dan reduce.
+   Functional programming cocok dipakai kalau butuh proses yang banyak ngolah data, misalnya perhitungan matematis, analisis data, atau aplikasi yang butuh kecepatan tinggi. Paradigma ini fokus pada fungsi murni dan minim efek samping, jadi hasilnya lebih konsisten.
 
 3. Bagaimana paradigma (prosedural, OOP, fungsional) memengaruhi maintainability dan scalability aplikasi?
    **Jawaban:**
@@ -127,10 +127,10 @@ Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur 
 
 4. Mengapa OOP lebih cocok untuk mengembangkan aplikasi POS dibanding prosedural?
    **Jawaban:**
-   Karena POS punya banyak entity (Produk, Transaksi, Pelanggan, dll). OOP bisa bikin entity jadi class, lebih rapi, gampang dikembangkan, dan enak dikelola.
+   Karena aplikasi POS (kasir) biasanya punya banyak fitur seperti data barang, pelanggan, transaksi, laporan, dll. OOP cocok karena setiap fitur bisa jadi objek sendiri, jadi lebih rapi, mudah dikembangkan, dan tidak membingungkan.
 
 5. Bagaimana paradigma fungsional dapat membantu mengurangi kode berulang (*boilerplate code*)?
    **Jawaban:**
-   Dengan lambda dan higher-order function. Loop panjang bisa diganti map, filter, atau reduce. Jadinya kode lebih ringkas dan jelas.
+   Dalam fungsional, fungsi bisa dipakai berulang-ulang tanpa perlu nulis ulang kodenya. Karena fungsi dianggap sebagai "blok bangunan utama", kita bisa kombinasikan fungsi-fungsi kecil untuk bikin proses yang lebih kompleks, jadi lebih hemat kode.
 
 ---
