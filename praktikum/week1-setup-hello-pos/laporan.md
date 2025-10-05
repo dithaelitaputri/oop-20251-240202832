@@ -115,7 +115,7 @@ public static void main(String[] args) {
 
 
 ## Bagaimana kode berjalan
-- Pada program prosedural, kode jalan langsung dari main lalu print nama dan NIM.
+  Pada program prosedural, kode jalan langsung dari main lalu print nama dan NIM.
 Pada OOP, saya buat objek mahasiswa, isi data, lalu panggil method untuk menampilkan hasil.
 Pada fungsional, saya pakai lambda (BiConsumer) untuk mendefinisikan fungsi, lalu jalankan dengan accept().
 
@@ -123,8 +123,9 @@ Pada fungsional, saya pakai lambda (BiConsumer) untuk mendefinisikan fungsi, lal
   Karena ini minggu pertama, belum ada perbedaan dengan minggu sebelumnya. Minggu ini langsung belajar dasar tentang paradigma pemrograman (prosedural, OOP, dan fungsional).
 
 ## Kendala yang dihadapi dan cara mengatasinya
-- Sempat bingung di bagian OOP (constructor, method) dan fungsional (lambda). Saya atasi dengan melihat contoh dan mencoba ulang sampai berhasil.  
-)
+- Sempat bingung di bagian OOP (constructor, method) dan fungsional (lambda). Saya atasi dengan melihat contoh dan mencoba ulang sampai berhasil.
+
+
 ---
 
 ## Kesimpulan
