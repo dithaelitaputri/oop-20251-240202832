@@ -66,6 +66,7 @@ public class HelloProcedural {
     }
 }
 
+```
 
 2. OOP
 
@@ -92,6 +93,7 @@ public class HelloOOP {
     }
 }
 
+```
 
 3. Fungsional
    
