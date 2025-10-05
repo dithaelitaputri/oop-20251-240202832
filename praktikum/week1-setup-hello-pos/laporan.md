@@ -57,108 +57,90 @@ Fungsional
 1. Prosedural  
 
 ```java
-// HelloProcedural.java
 public class HelloProcedural {
-   public static void main(String[] args) {
-      String nim = "240202864";
-      String nama = "Hanifah";
-      String[] produk = {"Beras", "Pupuk", "Benih"};
-      int[] harga = {10000, 15000, 12000};
-      int total = 0;
-      System.out.println("Hello World, I am Hanifah-240202864");
-      System.out.println("NIM: " + nim + ", Nama: " + nama);
-      System.out.println("Daftar Produk:");
-      for (int i = 0; i < produk.length; i++) {
-         System.out.println("- " + produk[i] + ": " + harga[i]);
-         total += harga[i];
-      }
-      System.out.println("Total harga semua produk: " + total);
-   }
+    public static void main(String[] args) {
+        // Paradigma prosedural: langsung instruksi urut
+        String nama = "Hanifah";
+        String nim = "240202864";
+        System.out.println("Hello World, I am " + nama + "-" + nim);
+    }
 }
 
 
 2. OOP
 
 // HelloOOP.java
-class Produk {
-   String nama;
-   int harga;
-   Produk(String nama, int harga) {
-      this.nama = nama;
-      this.harga = harga;
-   }
+class Person {
+    private String name;
+    private String nim;
+
+    public Person(String name, String nim) {
+        this.name = name;
+        this.nim = nim;
+    }
+
+    public void sayHello() {
+        System.out.println("Hello World, I am " + name + "-" + nim);
+    }
 }
 
 public class HelloOOP {
-   public static void main(String[] args) {
-      String nim = "240202864";
-      String namaMhs = "Hanifah";
-      Produk[] daftar = {
-         new Produk("Beras", 10000),
-         new Produk("Pupuk", 15000),
-         new Produk("Benih", 12000)
-      };
-      int total = 0;
-      System.out.println("Hello World, I am Hanifah-240202864");
-      System.out.println("NIM: " + nim + ", Nama: " + namaMhs);
-      System.out.println("Daftar Produk:");
-      for (Produk p : daftar) {
-         System.out.println("- " + p.nama + ": " + p.harga);
-         total += p.harga;
-      }
-      System.out.println("Total harga semua produk: " + total);
-   }
+    public static void main(String[] args) {
+        Person me = new Person("Hanifah", "240202864");
+        me.sayHello();
+    }
 }
 
 3. Fungsional
 
 // HelloFunctional.java
-import java.util.*;
-import java.util.stream.*;
+import java.util.function.BiConsumer;
+
 public class HelloFunctional {
-   public static void main(String[] args) {
-      String nim = "240202864";
-      String nama = "Hanifah";
-      List<String> produk = Arrays.asList("Beras", "Pupuk", "Benih");
-      List<Integer> harga = Arrays.asList(10000, 15000, 12000);
-      System.out.println("Hello World, I am Hanifah-240202864");
-      System.out.println("NIM: " + nim + ", Nama: " + nama);
-      System.out.println("Daftar Produk:");
-      IntStream.range(0, produk.size())
-         .forEach(i -> System.out.println("- " + produk.get(i) + ": " + harga.get(i)));
-      int total = harga.stream().mapToInt(Integer::intValue).sum();
-      System.out.println("Total harga semua produk: " + total);
-   }
+    public static void main(String[] args) {
+        // Paradigma fungsional: pakai fungsi murni (lambda)
+        BiConsumer<String, String> sayHello = (name, nim) -> 
+            System.out.println("Hello World, I am " + name + "-" + nim);
+
+        sayHello.accept("Hanifah", "240202864");
+    }
 }
+
 ```
 
 ---
 
 ## Hasil Eksekusi
 1. Prosedural  
-<img width="1366" height="768" alt="Cuplikan layar 2025-10-02 163428" src="https://github.com/user-attachments/assets/30b8eacb-f31d-4c72-8b44-afdb5c93dda1" />
+<img width="1366" height="768" alt="Cuplikan layar 2025-10-05 142236" src="https://github.com/user-attachments/assets/79ab8ba9-ff67-4149-a190-43ecf26332be" />
 
 2. OOP
-<img width="1366" height="768" alt="Cuplikan layar 2025-10-02 163707" src="https://github.com/user-attachments/assets/c4dc1038-f018-42d6-8c3e-b1679c3b6fbb" />
+<img width="1366" height="768" alt="Cuplikan layar 2025-10-05 142522" src="https://github.com/user-attachments/assets/da833a9e-6391-43d0-9d67-b4e6a33c5d72" />
 
 3. Fungsional
-<img width="1366" height="768" alt="Cuplikan layar 2025-10-02 163859" src="https://github.com/user-attachments/assets/3568497b-d590-4738-9a7e-b4d8f7ff8003" />
+<img width="1366" height="768" alt="Cuplikan layar 2025-10-05 142647" src="https://github.com/user-attachments/assets/ead10283-b8c0-465b-b6e8-1dd83965c6b6" />
 
 
 ---
 
 ## Analisis
-(
-- Jelaskan bagaimana kode berjalan.  
-- Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.  
-- Kendala yang dihadapi dan cara mengatasinya.  
-)
+Jelaskan bagaimana kode berjalan.
+  1. Prosedural
+  Cara Kerja: Semua logika disusun secara urutan langkah demi langkah (step-by-step). Data (nim, nama, produk, harga) didefinisikan langsung dalam fungsi main.
+  Proses: Inisialisasi data, Menampilkan output ke layar, Melakukan perhitungan total dengan loop for, Mencetak hasil akhir
+  2. OOP (Object-Oriented Programming)
+  Cara Kerja: Program dibangun berdasarkan objek dan kelas (Produk sebagai class). Data dan perilaku dikelompokkan bersama dalam objek.
+  Proses: Buat objek Produk dengan konstruktor, Simpan dalam array objek, Iterasi array untuk tampilkan data dan hitung total, Output hasil
+  3. Fungsional
+  Cara Kerja: Program ditulis secara deklaratif, fokus pada "apa" yang dilakukan, bukan "bagaimana". Gunakan fitur lambda dan Stream API untuk manipulasi koleksi.
+  Proses: Definisikan list produk dan harga, Gunakan IntStream.range() untuk menampilkan data, Hitung total dengan stream().mapToInt().sum(), Tampilkan hasil    
+
 ---
 
 ## Kesimpulan
-(Tuliskan kesimpulan dari praktikum minggu ini.  
-Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur dan mudah dikembangkan.*)
-
+1. Prosedural: Cocok untuk pemula dan tugas sederhana. Cepat dibuat, tapi kurang skalabel.
+2. OOP: Ideal untuk aplikasi yang kompleks dan bertumbuh. Struktur kode lebih rapi dan terorganisir.
+3. Fungsional: Kuat dalam pengolahan data, kode bersih, dan performansi tinggi di skala besar. Cocok untuk sistem modern berbasis data dan concurrency.
 ---
 
 ## Quiz
