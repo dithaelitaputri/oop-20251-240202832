@@ -28,15 +28,19 @@ Paradigma pemrograman adalah cara pandang dalam menyusun program:
 ## Langkah Praktikum
 
 (setup, coding, run).
+
    -setup
 menginstal JDK supaya bisa menjalankan program Java.
+
    -coding
 membuat tiga file Java sesuai paradigma yang dipelajari:
 HelloOOP.java
 HelloFunctional.java
 HelloProcedural.java
+   
    -run
 menjalankan coding dengan output 
+
 - Commit dan Push
 
 ---
