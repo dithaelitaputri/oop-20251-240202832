@@ -27,9 +27,17 @@ Paradigma pemrograman adalah cara pandang dalam menyusun program:
 
 ## Langkah Praktikum
 
-1. Langkah-langkah yang dilakukan (setup, coding, run).  
-2. File/kode yang dibuat.  
-3. Commit dan Push
+(setup, coding, run).
+   -setup
+menginstal JDK supaya bisa menjalankan program Java.
+   -coding
+membuat tiga file Java sesuai paradigma yang dipelajari:
+HelloOOP.java
+HelloFunctional.java
+HelloProcedural.java
+   -run
+menjalankan coding dengan output 
+- Commit dan Push
 
 ---
 
@@ -89,12 +97,18 @@ public static void main(String[] args) {
 
 ## Hasil Eksekusi
 
-![Screenshot Prosedural](<img width="799" height="503" alt="HelloProcedural_ditha" src="https://github.com/user-attachments/assets/2ac8c929-e8d3-4213-9718-9f5baadb2bc2" />
-)
-)
+
+<img width="799" height="503" alt="HelloProcedural_ditha" src="https://github.com/user-attachments/assets/c6a69675-e935-487b-8877-49a6c91a6842" />
+
+<img width="797" height="503" alt="HelloOOP_ditha" src="https://github.com/user-attachments/assets/d67ee99f-dfb0-4014-a140-7d292a2b3255" />
+
+<img width="798" height="502" alt="HelloFunctional_ditha" src="https://github.com/user-attachments/assets/2e83c253-2893-48ee-86a8-a7b5291cc40a" />
+
+
 ---
 
 ## Analisis
+
 
 ## Bagaimana kode berjalan
 - Pada program prosedural, kode jalan langsung dari main lalu print nama dan NIM.
@@ -110,8 +124,11 @@ Pada fungsional, saya pakai lambda (BiConsumer) untuk mendefinisikan fungsi, lal
 ---
 
 ## Kesimpulan
+
 ---
+
 Setiap paradigma pemrograman punya kelebihan dan kekurangan. Prosedural cocok untuk program kecil dan sederhana, OOP lebih baik untuk aplikasi besar dan kompleks karena terstruktur dengan objek, sedangkan fungsional unggul dalam pengolahan data dan mengurangi kode berulang. Pemilihan paradigma tergantung kebutuhan aplikasi, tingkat kompleksitas, dan tujuan pengembangan agar program lebih mudah dirawat dan dikembangkan.
+
 ---
 
 ## Quiz
