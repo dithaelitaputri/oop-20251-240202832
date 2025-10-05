@@ -141,6 +141,8 @@ Jelaskan bagaimana kode berjalan.
 1. Prosedural: Cocok untuk pemula dan tugas sederhana. Cepat dibuat, tapi kurang skalabel.
 2. OOP: Ideal untuk aplikasi yang kompleks dan bertumbuh. Struktur kode lebih rapi dan terorganisir.
 3. Fungsional: Kuat dalam pengolahan data, kode bersih, dan performansi tinggi di skala besar. Cocok untuk sistem modern berbasis data dan concurrency.
+
+   
 ---
 
 ## Quiz
