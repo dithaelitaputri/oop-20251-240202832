@@ -34,7 +34,6 @@ Paradigma pemrograman adalah cara pandang dalam menyusun program:
 ---
 
 ## Kode Program
-(Tuliskan kode utama yang dibuat, contoh:  
 
 Prosedural
 ```
@@ -105,7 +104,7 @@ Pada fungsional, saya pakai lambda (BiConsumer) untuk mendefinisikan fungsi, lal
 ## Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya?
   Karena ini minggu pertama, belum ada perbedaan dengan minggu sebelumnya. Minggu ini langsung belajar dasar tentang paradigma pemrograman (prosedural, OOP, dan fungsional).
 
-   ##Kendala yang dihadapi dan cara mengatasinya
+## Kendala yang dihadapi dan cara mengatasinya
 - Sempat bingung di bagian OOP (constructor, method) dan fungsional (lambda). Saya atasi dengan melihat contoh dan mencoba ulang sampai berhasil.  
 )
 ---
@@ -127,7 +126,7 @@ Setiap paradigma pemrograman punya kelebihan dan kekurangan. Prosedural cocok un
 3. Bagaimana paradigma (prosedural, OOP, fungsional) memengaruhi maintainability dan scalability aplikasi?
    **Jawaban:**
 
-   -  Prosedural: gampang ditulis, tapi susah dirawat kalau program makin besar.
+   - Prosedural: gampang ditulis, tapi susah dirawat kalau program makin besar.
    - OOP: lebih teratur, gampang dikembangkan, dan mudah diperluas.
    - Fungsional: kode singkat, minim efek samping, gampang diuji, dan mudah diparalelkan.
 
