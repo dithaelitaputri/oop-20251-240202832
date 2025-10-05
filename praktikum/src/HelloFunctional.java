@@ -1,3 +1,4 @@
+package src;
 // HelloFunctional.java
 import java.util.function.BiConsumer;
 public class HelloFunctional {

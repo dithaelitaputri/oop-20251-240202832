@@ -1,3 +1,4 @@
+package src;
 // HelloOOP.java
 class Mahasiswa {
    String nama;
