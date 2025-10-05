@@ -97,7 +97,7 @@ public static void main(String[] args) {
 
 ## Analisis
 
-##Bagaimana kode berjalan
+## Bagaimana kode berjalan
 - Pada program prosedural, kode jalan langsung dari main lalu print nama dan NIM.
 Pada OOP, saya buat objek mahasiswa, isi data, lalu panggil method untuk menampilkan hasil.
 Pada fungsional, saya pakai lambda (BiConsumer) untuk mendefinisikan fungsi, lalu jalankan dengan accept().
