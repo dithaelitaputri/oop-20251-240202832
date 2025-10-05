@@ -19,9 +19,9 @@ Topik: Praktikum OOP
 ## Dasar Teori
 Paradigma pemrograman adalah cara pandang dalam menyusun program:
 
-- Prosedural: program dibangun sebagai rangkaian perintah (fungsi/prosedur).
-- OOP (Object-Oriented Programming): program dibangun dari objek yang memiliki data (atribut) dan perilaku (method).
-- Fungsional: program dipandang sebagai pemetaan fungsi matematika, lebih menekankan ekspresi dan transformasi data.
+- Prosedural: prosedural menyusun program sebagai rangkaian langkah atau fungsi yang dieksekusi secara berurutan
+- OOP (Object-Oriented Programming): paradigma OOP menggunakan konsep objek yang punya atribut dan method, sehingga lebih terstruktur, mudah dikembangkan, dan bisa digunakan ulang.
+- Fungsional: memandang program sebagai pemetaan fungsi matematika yang berfokus pada ekspresi dan transformasi data, biasanya menggunakan stream atau lambda di Java
 
 ---
 
@@ -29,7 +29,7 @@ Paradigma pemrograman adalah cara pandang dalam menyusun program:
 
 1. Langkah-langkah yang dilakukan (setup, coding, run).  
 2. File/kode yang dibuat.  
-3. Commit message yang digunakan.)
+3. Commit dan Push
 
 ---
 
