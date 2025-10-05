@@ -112,25 +112,25 @@ Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur 
 ## Quiz
 1. Apakah OOP selalu lebih baik dari prosedural?
    **Jawaban:**
-   Tidak selalu. OOP bagus kalau programnya besar dan kompleks karena ada konsep objek yang rapi. Tapi kalau program kecil dan sederhana, prosedural bisa lebih cepat dibuat dan lebih mudah.
+   - Tidak selalu. OOP bagus kalau programnya besar dan kompleks karena ada konsep objek yang rapi. Tapi kalau program kecil dan sederhana, prosedural bisa lebih cepat dibuat dan lebih mudah.
 
 2. Kapan functional programming lebih cocok digunakan dibanding OOP atau prosedural?
    **Jawaban:**
-   Functional programming cocok dipakai kalau butuh proses yang banyak ngolah data, misalnya perhitungan matematis, analisis data, atau aplikasi yang butuh kecepatan tinggi. Paradigma ini fokus pada fungsi murni dan minim efek samping, jadi hasilnya lebih konsisten.
+   - Functional programming cocok dipakai kalau butuh proses yang banyak ngolah data, misalnya perhitungan matematis, analisis data, atau aplikasi yang butuh kecepatan tinggi. Paradigma ini fokus pada fungsi murni dan minim efek samping, jadi hasilnya lebih konsisten.
 
 3. Bagaimana paradigma (prosedural, OOP, fungsional) memengaruhi maintainability dan scalability aplikasi?
    **Jawaban:**
 
-   * Prosedural: gampang ditulis, tapi susah dirawat kalau program makin besar.
+   - * Prosedural: gampang ditulis, tapi susah dirawat kalau program makin besar.
    * OOP: lebih teratur, gampang dikembangkan, dan mudah diperluas.
    * Fungsional: kode singkat, minim efek samping, gampang diuji, dan mudah diparalelkan.
 
 4. Mengapa OOP lebih cocok untuk mengembangkan aplikasi POS dibanding prosedural?
    **Jawaban:**
-   Karena aplikasi POS (kasir) biasanya punya banyak fitur seperti data barang, pelanggan, transaksi, laporan, dll. OOP cocok karena setiap fitur bisa jadi objek sendiri, jadi lebih rapi, mudah dikembangkan, dan tidak membingungkan.
+   -  Karena aplikasi POS (kasir) biasanya punya banyak fitur seperti data barang, pelanggan, transaksi, laporan, dll. OOP cocok karena setiap fitur bisa jadi objek sendiri, jadi lebih rapi, mudah dikembangkan, dan tidak membingungkan.
 
 5. Bagaimana paradigma fungsional dapat membantu mengurangi kode berulang (*boilerplate code*)?
    **Jawaban:**
-   Dalam fungsional, fungsi bisa dipakai berulang-ulang tanpa perlu nulis ulang kodenya. Karena fungsi dianggap sebagai "blok bangunan utama", kita bisa kombinasikan fungsi-fungsi kecil untuk bikin proses yang lebih kompleks, jadi lebih hemat kode.
+   - Dalam fungsional, fungsi bisa dipakai berulang-ulang tanpa perlu nulis ulang kodenya. Karena fungsi dianggap sebagai "blok bangunan utama", kita bisa kombinasikan fungsi-fungsi kecil untuk bikin proses yang lebih kompleks, jadi lebih hemat kode.
 
 ---
