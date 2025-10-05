@@ -11,9 +11,7 @@ Topik: Pengenalan Paradigma dan Setup Proyek
 ## Tujuan
    
     1. Mahasiswa mampu mendefinisikan paradigma prosedural, OOP, dan fungsional. 
-    
     2. Mahasiswa mampu membandingkan kelebihan dan keterbatasan tiap paradigma. 
-    
     3. Mahasiswa mampu memberikan contoh program sederhana untuk masing-masing paradigma. 
     
 
@@ -56,7 +54,7 @@ Fungsional
 ---
 
 ## Kode Program
-(1. Prosedural  
+1. Prosedural  
 
 ```java
 // HelloProcedural.java
@@ -133,11 +131,11 @@ public class HelloFunctional {
    }
 }
 ```
-)
+
 ---
 
 ## Hasil Eksekusi
-(1. Prosedural  
+1. Prosedural  
 <img width="1366" height="768" alt="Cuplikan layar 2025-10-02 163428" src="https://github.com/user-attachments/assets/30b8eacb-f31d-4c72-8b44-afdb5c93dda1" />
 
 2. OOP
@@ -147,7 +145,6 @@ public class HelloFunctional {
 <img width="1366" height="768" alt="Cuplikan layar 2025-10-02 163859" src="https://github.com/user-attachments/assets/3568497b-d590-4738-9a7e-b4d8f7ff8003" />
 
 
-)
 ---
 
 ## Analisis
@@ -165,11 +162,33 @@ Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur 
 ---
 
 ## Quiz
-(1. [Tuliskan kembali pertanyaan 1 dari panduan]  
-   **Jawaban:** …  
 
-2. [Tuliskan kembali pertanyaan 2 dari panduan]  
-   **Jawaban:** …  
+1. Apakah OOP selalu lebih baik dari prosedural?
+   Jawaban: Tidak selalu. OOP (Object-Oriented Programming) lebih unggul dalam proyek berskala besar, kompleks, dan yang memerlukan modularitas serta reuse kode. Namun, prosedural lebih
+   sederhana dan efisien untuk program kecil atau skrip cepat, di mana struktur objek tidak dibutuhkan. Pemilihan paradigma tergantung pada kebutuhan proyek, tim, dan tujuan jangka panjang.
+2. Kapan functional programming lebih cocok digunakan dibanding OOP atau prosedural?
+   Jawaban: Functional programming lebih cocok digunakan ketika:
+   - Aplikasi memproses data dalam jumlah besar atau kompleksitas tinggi, seperti dalam big data, stream processing, atau machine learning.
+   - Dibutuhkan kode yang lebih bersih, singkat, dan minim efek samping.
+   - Paralelisme atau concurrency sangat penting, karena FP mendukung immutable state dan fungsi murni.
+   Contoh: pemrosesan data di Spark, aplikasi backend berbasis event-stream, atau pipeline data analytics.
+3. Bagaimana paradigma (prosedural, OOP, fungsional) memengaruhi maintainability dan scalability aplikasi?
+   Jawaban: Prosedural: Mudah dipahami dan diimplementasikan, tetapi saat skala aplikasi membesar, struktur bisa menjadi tidak terorganisir (spaghetti code), sehingga sulit untuk di-maintain.
+   OOP: Memberikan struktur yang modular dan terorganisir melalui class dan objek. Cocok untuk aplikasi berskala besar, karena lebih mudah di-maintain, diuji, dan diperluas.
+   Fungsional: Memudahkan testing, debugging, dan concurrency karena menghindari efek samping. Cocok untuk aplikasi yang berskala besar dan intensif data, tetapi bisa menantang bagi
+   developer yang tidak terbiasa.
+4. Mengapa OOP lebih cocok untuk mengembangkan aplikasi POS dibanding prosedural?
+   Jawaban: Karena POS (Point of Sale) adalah sistem yang melibatkan berbagai entitas seperti Produk, Pelanggan, Transaksi, Pegawai, dan Stok.
+   Paradigma OOP memungkinkan:
+   - Representasi real-world dalam bentuk objek dan class.
+   - Modularitas dan enkapsulasi, sehingga fitur bisa dikembangkan secara terpisah (misalnya modul kasir, stok, laporan).
+   - Pemeliharaan lebih mudah, karena struktur kode lebih jelas.
+   - Kemudahan ekspansi, seperti penambahan fitur pembayaran digital atau diskon tanpa merombak keseluruhan sistem.
+5. Bagaimana paradigma fungsional dapat membantu mengurangi kode berulang (boilerplate code)?
+   Jawaban: Paradigma fungsional menggunakan:
+   - Higher-order functions (fungsi yang menerima fungsi lain sebagai parameter)
+   - Stream API dan operasi deklaratif (seperti .map(), .filter(), .reduce()), yang menghilangkan kebutuhan akan loop berulang dan variabel sementara.
+   - Immutability dan fungsi murni, yang membuat kode lebih prediktif dan terstruktur tanpa banyak deklarasi tambahan.
+   Hasilnya, kode menjadi Lebih pendek dan mudah dibaca, Lebih konsisten, Lebih mudah diuji dan dipelihara, Sehingga mengurangi boilerplate dan meningkatkan produktivitas.
 
-3. [Tuliskan kembali pertanyaan 3 dari panduan]  
-   **Jawaban:** …  )
+
