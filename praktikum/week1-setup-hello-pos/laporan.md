@@ -110,11 +110,27 @@ Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur 
 ---
 
 ## Quiz
-(1. [Tuliskan kembali pertanyaan 1 dari panduan]  
-   **Jawaban:** …  
+1. Apakah OOP selalu lebih baik dari prosedural?
+   **Jawaban:**
+   Tidak. OOP bagus untuk program besar karena modular dan bisa dipakai ulang. Tapi untuk program kecil, prosedural lebih simpel dan cepat dibuat.
 
-2. [Tuliskan kembali pertanyaan 2 dari panduan]  
-   **Jawaban:** …  
+2. Kapan functional programming lebih cocok digunakan dibanding OOP atau prosedural?
+   **Jawaban:**
+   Functional lebih pas saat butuh olah data besar, kerja paralel/asynchronous, atau manipulasi data dengan cara deklaratif seperti filter, map, dan reduce.
 
-3. [Tuliskan kembali pertanyaan 3 dari panduan]  
-   **Jawaban:** …  )
+3. Bagaimana paradigma (prosedural, OOP, fungsional) memengaruhi maintainability dan scalability aplikasi?
+   **Jawaban:**
+
+   * Prosedural: gampang ditulis, tapi susah dirawat kalau program makin besar.
+   * OOP: lebih teratur, gampang dikembangkan, dan mudah diperluas.
+   * Fungsional: kode singkat, minim efek samping, gampang diuji, dan mudah diparalelkan.
+
+4. Mengapa OOP lebih cocok untuk mengembangkan aplikasi POS dibanding prosedural?
+   **Jawaban:**
+   Karena POS punya banyak entity (Produk, Transaksi, Pelanggan, dll). OOP bisa bikin entity jadi class, lebih rapi, gampang dikembangkan, dan enak dikelola.
+
+5. Bagaimana paradigma fungsional dapat membantu mengurangi kode berulang (*boilerplate code*)?
+   **Jawaban:**
+   Dengan lambda dan higher-order function. Loop panjang bisa diganti map, filter, atau reduce. Jadinya kode lebih ringkas dan jelas.
+
+---
