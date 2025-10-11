@@ -30,10 +30,17 @@ Di dalam class terdapat atribut (variabel) yang menyimpan data dan method(fungsi
 ---
 
 ## Langkah Praktikum
-(Tuliskan Langkah-langkah dalam prakrikum, contoh:
-1. Langkah-langkah yang dilakukan (setup, coding, run).  
-2. File/kode yang dibuat.  
-3. Commit message yang digunakan.)
+- Membuat Class 
+1. Buat file Produk.java di folder model berisi class untuk mendefinisikan atribut dan perilaku produk (kode, nama, harga, stok, tambah/kurangi stok).
+2. Buat file CreditBy.java di folder util untuk menampilkan identitas pembuat program.
+3. Buat file MainProduk.java di folder agripos sebagai program utama untuk menjalankan seluruh kode (membuat objek, menampilkan data, dan melakukan transaksi stok).
+
+ - kode yang dibuat.
+1. Produk.java berisi class produk dengan atribut dan method tambahStok() serta kurangiStok().
+2. CreditBy.java menampilkan identitas pembuat program.
+3. MainProduk.java program utama untuk menjalankan logika dan menampilkan hasil.
+   
+- Commit dan push
 
 ---
 
@@ -150,17 +157,17 @@ public class MainProduk {
 ```
 
 ## Analisis
-(
-- Jelaskan bagaimana kode berjalan.  
-- Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.  
-- Kendala yang dihadapi dan cara mengatasinya.  
-)
+
+- Program ini berjalan dimulai dari file MainProduk.java, di mana tiga objek produk dibuat menggunakan class Produk. Setiap objek memiliki data sendiri seperti kode, nama, harga, dan stok yang disimpan dalam atribut class tersebut. Setelah objek dibuat, program menampilkan informasi produk satu per satu, lalu menjalankan method tambahStok() untuk menambah stok dan kurangiStok() untuk mengurangi stok ketika ada transaksi. Pada akhir program, class CreditBy digunakan untuk menampilkan identitas pembuat program di layar. Dengan cara kerja ini, setiap bagian kode memiliki fungsi yang jelas dan saling terhubung melalui konsep objek.
+  
+- Jika sebelumnya program masih menggunakan cara prosedural, di mana semua perintah ditulis langsung dalam satu file tanpa pemisahan fungsi, maka kali ini setiap bagian dibuat dalam class tersendiri.
+
+- Kendala yang kendala yang sering muncul adalah kesalahan pada struktur folder dan package yang tidak sesuai dengan letak file Java, sehingga program tidak bisa dijalankan dengan benar.
+
 ---
 
 ## Kesimpulan
-(Tuliskan kesimpulan dari praktikum minggu ini.  
-Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur dan mudah dikembangkan.*)
-
+Dengan menggunakan class dan object, program menjadi lebih terstruktur, rapi, dan mudah dipahami. Setiap bagian kode memiliki fungsi yang jelas data disimpan dalam atribut, sedangkan perilaku ditulis dalam method. Pendekatan berorientasi objek ini juga membuat program lebih mudah dikembangkan dan dikelola dibandingkan cara prosedural, karena setiap class dapat digunakan kembali tanpa harus menulis ulang seluruh kode.
 ---
 
 ## Quiz
