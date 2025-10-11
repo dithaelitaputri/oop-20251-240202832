@@ -176,10 +176,13 @@ Dengan menggunakan class dan object, program menjadi lebih terstruktur, rapi, da
 
 ## Quiz
 1. **Mengapa atribut sebaiknya dideklarasikan sebagai private dalam class?**
+   
    **Jawaban:** Atribut sebaiknya dibuat private supaya data di dalam class tidak bisa diubah sembarangan dari luar. Jadi, hanya class itu sendiri yang bisa mengatur datanya.
 
-2. **Apa fungsi getter dan setter dalam enkapsulasi?**
+3. **Apa fungsi getter dan setter dalam enkapsulasi?**
+   
    **Jawaban:** Getter dan setter dipakai untuk mengakses atribut yang sudah dibuat private. Getter berfungsi untuk melihat isi data, sedangkan setter digunakan untuk mengubah isi data dengan cara yang lebih aman dan terkontrol
 
-3. **Bagaimana cara class `Produk` mendukung pengembangan aplikasi POS yang lebih kompleks?**
+5. **Bagaimana cara class `Produk` mendukung pengembangan aplikasi POS yang lebih kompleks?**
+   
    **Jawaban:** Class Produk membantu menyimpan dan mengatur data setiap barang, seperti kode, nama, harga, dan stok. Dengan adanya class ini, program bisa lebih mudah dikembangkan
