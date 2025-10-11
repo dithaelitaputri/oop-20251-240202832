@@ -30,17 +30,17 @@ Di dalam class terdapat atribut (variabel) yang menyimpan data dan method(fungsi
 ---
 
 ## Langkah Praktikum
-- Membuat Class 
-1. Buat file Produk.java di folder model berisi class untuk mendefinisikan atribut dan perilaku produk (kode, nama, harga, stok, tambah/kurangi stok).
-2. Buat file CreditBy.java di folder util untuk menampilkan identitas pembuat program.
-3. Buat file MainProduk.java di folder agripos sebagai program utama untuk menjalankan seluruh kode (membuat objek, menampilkan data, dan melakukan transaksi stok).
+1. Membuat Class 
+- Buat file Produk.java di folder model berisi class untuk mendefinisikan atribut dan perilaku produk (kode, nama, harga, stok, tambah/kurangi stok).
+- Buat file CreditBy.java di folder util untuk menampilkan identitas pembuat program.
+- Buat file MainProduk.java di folder agripos sebagai program utama untuk menjalankan seluruh kode (membuat objek, menampilkan data, dan melakukan transaksi stok).
 
- - kode yang dibuat.
-1. Produk.java berisi class produk dengan atribut dan method tambahStok() serta kurangiStok().
-2. CreditBy.java menampilkan identitas pembuat program.
-3. MainProduk.java program utama untuk menjalankan logika dan menampilkan hasil.
+2. kode yang dibuat.
+- Produk.java berisi class produk dengan atribut dan method tambahStok() serta kurangiStok().
+-  CreditBy.java menampilkan identitas pembuat program.
+- MainProduk.java program utama untuk menjalankan logika dan menampilkan hasil.
    
-- Commit dan push
+3. Commit dan push
 
 ---
 
