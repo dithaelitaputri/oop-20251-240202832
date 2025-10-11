@@ -152,12 +152,10 @@ public class MainProduk {
 ## Hasil Eksekusi
 ![class   object](https://github.com/user-attachments/assets/a2dff3a5-69fb-41a4-83bf-afb25f60f45b)
 
-
 ```
-
-Analisis
-
-
+```
+## Analisis
+```
 ```
    **Penjelasan Kode**
 Program ini berjalan dimulai dari file MainProduk.java, di mana tiga objek produk dibuat menggunakan class Produk. Setiap objek memiliki data sendiri seperti kode, nama, harga, dan stok yang disimpan dalam atribut class tersebut. Setelah objek dibuat, program menampilkan informasi produk satu per satu, lalu menjalankan method tambahStok() untuk menambah stok dan kurangiStok() untuk mengurangi stok ketika ada transaksi. Pada akhir program, class CreditBy digunakan untuk menampilkan identitas pembuat program di layar. Dengan cara kerja ini, setiap bagian kode memiliki fungsi yang jelas dan saling terhubung melalui konsep objek.
