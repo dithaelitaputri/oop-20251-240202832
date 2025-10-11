@@ -17,7 +17,8 @@ Topik: Class dan Object
 ---
 
 ## Dasar Teori
-1. Class adalah blueprint dari objek.  
+1. Class adalah blueprint dari objek, atau rancangan untuk membuat objek.
+Di dalam class terdapat atribut (variabel) yang menyimpan data dan metode (fungsi) yang menentukan perilaku objek. 
 2. Object adalah instansiasi dari class.  
 3. Enkapsulasi digunakan untuk menyembunyikan data.)
 
