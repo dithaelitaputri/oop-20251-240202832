@@ -157,25 +157,29 @@ public class MainProduk {
 ```
 
 ## Analisis
+**Penjelasan Kode**
+Program ini berjalan dimulai dari file MainProduk.java, di mana tiga objek produk dibuat menggunakan class Produk. Setiap objek memiliki data sendiri seperti kode, nama, harga, dan stok yang disimpan dalam atribut class tersebut. Setelah objek dibuat, program menampilkan informasi produk satu per satu, lalu menjalankan method tambahStok() untuk menambah stok dan kurangiStok() untuk mengurangi stok ketika ada transaksi. Pada akhir program, class CreditBy digunakan untuk menampilkan identitas pembuat program di layar. Dengan cara kerja ini, setiap bagian kode memiliki fungsi yang jelas dan saling terhubung melalui konsep objek.
 
-- Program ini berjalan dimulai dari file MainProduk.java, di mana tiga objek produk dibuat menggunakan class Produk. Setiap objek memiliki data sendiri seperti kode, nama, harga, dan stok yang disimpan dalam atribut class tersebut. Setelah objek dibuat, program menampilkan informasi produk satu per satu, lalu menjalankan method tambahStok() untuk menambah stok dan kurangiStok() untuk mengurangi stok ketika ada transaksi. Pada akhir program, class CreditBy digunakan untuk menampilkan identitas pembuat program di layar. Dengan cara kerja ini, setiap bagian kode memiliki fungsi yang jelas dan saling terhubung melalui konsep objek.
-  
-- Jika sebelumnya program masih menggunakan cara prosedural, di mana semua perintah ditulis langsung dalam satu file tanpa pemisahan fungsi, maka kali ini setiap bagian dibuat dalam class tersendiri.
+**Perbedaan Minggu Ini**
+Jika sebelumnya program masih menggunakan cara prosedural, di mana semua perintah ditulis langsung dalam satu file tanpa pemisahan fungsi, maka kali ini setiap bagian dibuat dalam class tersendiri.
 
-- Kendala yang kendala yang sering muncul adalah kesalahan pada struktur folder dan package yang tidak sesuai dengan letak file Java, sehingga program tidak bisa dijalankan dengan benar.
+**Kendala**
+Kendala yang kendala yang sering muncul adalah kesalahan pada struktur folder dan package yang tidak sesuai dengan letak file Java, sehingga program tidak bisa dijalankan dengan benar.
 
 ---
 
-## Kesimpulan
+## **Kesimpulan**
+
 Dengan menggunakan class dan object, program menjadi lebih terstruktur, rapi, dan mudah dipahami. Setiap bagian kode memiliki fungsi yang jelas data disimpan dalam atribut, sedangkan perilaku ditulis dalam method. Pendekatan berorientasi objek ini juga membuat program lebih mudah dikembangkan dan dikelola dibandingkan cara prosedural, karena setiap class dapat digunakan kembali tanpa harus menulis ulang seluruh kode.
+
 ---
 
 ## Quiz
-(1. [Tuliskan kembali pertanyaan 1 dari panduan]  
-   **Jawaban:** …  
+1. **Mengapa atribut sebaiknya dideklarasikan sebagai private dalam class?**
+   **Jawaban:** Atribut sebaiknya dibuat private supaya data di dalam class tidak bisa diubah sembarangan dari luar. Jadi, hanya class itu sendiri yang bisa mengatur datanya.
 
-2. [Tuliskan kembali pertanyaan 2 dari panduan]  
-   **Jawaban:** …  
+2. **Apa fungsi getter dan setter dalam enkapsulasi?**
+   **Jawaban:** Getter dan setter dipakai untuk mengakses atribut yang sudah dibuat private. Getter berfungsi untuk melihat isi data, sedangkan setter digunakan untuk mengubah isi data dengan cara yang lebih aman dan terkontrol
 
-3. [Tuliskan kembali pertanyaan 3 dari panduan]  
-   **Jawaban:** …  )
+3. **Bagaimana cara class `Produk` mendukung pengembangan aplikasi POS yang lebih kompleks?**
+   **Jawaban:** Class Produk membantu menyimpan dan mengatur data setiap barang, seperti kode, nama, harga, dan stok. Dengan adanya class ini, program bisa lebih mudah dikembangkan
