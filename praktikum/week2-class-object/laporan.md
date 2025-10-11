@@ -107,13 +107,10 @@ public class CreditBy {
     }
 }
 
+
 ---
-
-
 MainProduk
-
 ---
-
 package main.java.com.upb.agripos;
 
 import main.java.com.upb.agripos.model.Produk;
@@ -149,6 +146,7 @@ public class MainProduk {
 (Sertakan screenshot hasil eksekusi program.  
 ![Screenshot hasil](screenshots/hasil.png)
 )
+
 ---
 
 
