@@ -19,9 +19,9 @@ Topik: Class dan Object
 ## Dasar Teori
 1. Class adalah blueprint dari objek, atau rancangan untuk membuat objek.
 Di dalam class terdapat atribut (variabel) yang menyimpan data dan method(fungsi) yang menentukan perilaku objek
- - Atribut yaitu data yang dimiliki oleh class
+   - Atribut yaitu data yang dimiliki oleh class
    Contoh: nama, harga, stok adalah atribut dalam class Produk
- - Method yaitu Fungsi atau perilaku yang bisa dilakukan oleh objek
+   - Method yaitu Fungsi atau perilaku yang bisa dilakukan oleh objek
    Contoh: getNama() atau setHarga() adalah method
 2. Object adalah instansiasi dari class dan punya data sendiri
    Contoh: Produk p1 = new Produk(); → p1 adalah objek
@@ -31,14 +31,14 @@ Di dalam class terdapat atribut (variabel) yang menyimpan data dan method(fungsi
 
 ## Langkah Praktikum
 1. Membuat Class 
-- Buat file Produk.java di folder model berisi class untuk mendefinisikan atribut dan perilaku produk (kode, nama, harga, stok, tambah/kurangi stok).
-- Buat file CreditBy.java di folder util untuk menampilkan identitas pembuat program.
-- Buat file MainProduk.java di folder agripos sebagai program utama untuk menjalankan seluruh kode (membuat objek, menampilkan data, dan melakukan transaksi stok).
+   - Buat file Produk.java di folder model berisi class untuk mendefinisikan atribut dan perilaku produk (kode, nama, harga, stok, tambah/kurangi stok).
+   - Buat file CreditBy.java di folder util untuk menampilkan identitas pembuat program.
+   - Buat file MainProduk.java di folder agripos sebagai program utama untuk menjalankan seluruh kode (membuat objek, menampilkan data, dan melakukan transaksi stok).
 
 2. kode yang dibuat.
-- Produk.java berisi class produk dengan atribut dan method tambahStok() serta kurangiStok().
--  CreditBy.java menampilkan identitas pembuat program.
-- MainProduk.java program utama untuk menjalankan logika dan menampilkan hasil.
+   - Produk.java berisi class produk dengan atribut dan method tambahStok() serta kurangiStok().
+   -  CreditBy.java menampilkan identitas pembuat program.
+   - MainProduk.java program utama untuk menjalankan logika dan menampilkan hasil.
    
 3. Commit dan push
 
