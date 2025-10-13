@@ -149,7 +149,8 @@ public class MainProduk {
 ```
 
 ## Hasil Eksekusi
-![class   object](https://github.com/user-attachments/assets/8a8cd399-f799-4ba2-9567-4dbe211e30a9)
+![class   object](https://github.com/user-attachments/assets/204cc986-821a-458b-adf6-29d9006452ee)
+
 
 
 ```
