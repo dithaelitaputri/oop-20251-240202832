@@ -2,16 +2,9 @@
 Topik: Class dan Object
 
 ## Identitas
-<<<<<<< HEAD
 - Nama  : Ditha Elita Putri
 - NIM   : 240202832
 - Kelas : 3IKRA
-=======
-- Nama  : [Ditha Elita Putri]
-- NIM   : [NIM Mahasiswa]
-- Kelas : [Kelas]
->>>>>>> dc1b973 (weeks-2-class object)
-
 ---
 
 ## Tujuan
