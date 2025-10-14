@@ -10,8 +10,11 @@ Topik: Class dan Object
 
 ## Tujuan
 Mahasiswa mampu menjelaskan konsep class, object, atribut, dan method dalam OOP.
+
 Mahasiswa mampu menerapkan access modifier dan enkapsulasi dalam pembuatan class.
+
 Mahasiswa mampu mengimplementasikan class Produk dengan atribut dan method yang sesuai.
+
 Mahasiswa mampu mendemonstrasikan instansiasi object serta menampilkan data produk di console.
 
 ---
@@ -142,7 +145,8 @@ public class MainProduk {
 ---
 
 ## Hasil Eksekusi
-![alt text](<Cuplikan layar 2025-10-08 144907.png>)
+<img width="1366" height="768" alt="Cuplikan layar 2025-10-08 144907" src="https://github.com/user-attachments/assets/e07c817c-219b-4795-8d24-3fd22890943f" />
+
 ---
 
 ## Analisis
@@ -160,6 +164,7 @@ MainProduk untuk menampilkan daftar produk (beserta kode, nama, harga, dan stok)
 
 ## Kesimpulan
 Program ini merupakan contoh yang baik dari penggunaan class terpisah, modularisasi kode, dan encapsulation, yang sangat penting dalam pengembangan aplikasi skala besar. Selain itu, mencantumkan identitas pembuat memberikan nilai tambah dari sisi dokumentasi dan profesionalitas. Jika dikembangkan lebih lanjut, program ini bisa menjadi bagian dari sistem manajemen produk secara digital.
+
 ---
 
 ## Quiz
