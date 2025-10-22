@@ -1,10 +1,10 @@
-# Laporan Praktikum Minggu 1 (sesuaikan minggu ke berapa?)
-Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
+# Laporan Praktikum Minggu 3 
+Topik: Bab 3 – Inheritance
 
 ## Identitas
-- Nama  : [Nama Mahasiswa]
-- NIM   : [NIM Mahasiswa]
-- Kelas : [Kelas]
+- Nama  : Ditha Elita Putri
+- NIM   : 240202832
+- Kelas : 3 IKRA
 
 ---
 
