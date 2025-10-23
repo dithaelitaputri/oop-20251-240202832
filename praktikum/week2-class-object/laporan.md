@@ -2,32 +2,33 @@
 Topik: Class dan Object
 
 ## Identitas
-- Nama  : [Hanifah
-- NIM   : [240202864
-- Kelas : [3 IKRA
+- Nama  : Hanifah
+- NIM   : 240202864
+- Kelas : 3 IKRA
 
 ---
 
 ## Tujuan
 Mahasiswa mampu menjelaskan konsep class, object, atribut, dan method dalam OOP.
-Mahasiswa mampu menerapkan access modifier dan enkapsulasi dalam pembuatan class.
-Mahasiswa mampu mengimplementasikan class Produk dengan atribut dan method yang sesuai.
-Mahasiswa mampu mendemonstrasikan instansiasi object serta menampilkan data produk di console.
 
+Mahasiswa mampu menerapkan access modifier dan enkapsulasi dalam pembuatan class.
+
+Mahasiswa mampu mengimplementasikan class Produk dengan atribut dan method yang sesuai.
+
+Mahasiswa mampu mendemonstrasikan instansiasi object serta menampilkan data produk di console.
 
 ---
 
 ## Dasar Teori
- 
 1. Class adalah blueprint dari objek.  
 2. Object adalah instansiasi dari class yang berisi atribut (data) dan method (perilaku).   
 3. Enkapsulasi digunakan untuk menyembunyikan data menggunakan access modifier (public, private, protected) serta menyediakan akses melalui getter dan setter.
 
+
 ---
 
 ## Langkah Praktikum
-
- Membuat Class Produk
+Membuat Class Produk
    1. Buat file Produk.java pada package model.
    2. Tambahkan atribut: kode, nama, harga, dan stok.
    3. Gunakan enkapsulasi dengan menjadikan atribut bersifat private dan membuat getter serta setter untuk masing-masing atribut.
@@ -44,11 +45,10 @@ Mahasiswa mampu mendemonstrasikan instansiasi object serta menampilkan data prod
 
  Commit dan Push
    1. Commit dengan pesan: week2-class-object.
-
-
 ---
 
 ## Kode Program
+
 1. Produk.java  
 
 ```java
@@ -141,23 +141,24 @@ public class MainProduk {
     }
 }
 ```
+
 ---
 
 ## Hasil Eksekusi
-![alt text](<Cuplikan layar 2025-10-08 144907.png>)
+<img width="1366" height="768" alt="Cuplikan layar 2025-10-08 144907" src="https://github.com/user-attachments/assets/e07c817c-219b-4795-8d24-3fd22890943f" />
+
 ---
 
 ## Analisis
-(
-- Jelaskan bagaimana kode berjalan. 
+
+- Jelaskan bagaimana kode berjalan.  
 Produk.java dalam konteks aplikasi (misal aplikasi kasir atau gudang), class Produk akan digunakan seperti ini:
 1. Membuat objek produk saat input data barang baru.
 2. Mengubah data jika ada perubahan harga atau stok.
 3. Melakukan transaksi dengan memanggil kurangiStok() saat pembelian.
 4. Mengisi ulang stok dengan tambahStok(). 
 CreditBy.java class ini dibuat untuk menampilkan informasi kredit atau identitas pembuat program, biasanya digunakan di akhir program untuk menyatakan siapa yang membuat/mengembangkan aplikasi.
-MainProduk untuk menampilkan daftar produk (beserta kode, nama, harga, dan stok), kemudian mencetak identitas pembuat program.
- 
+MainProduk untuk menampilkan daftar produk (beserta kode, nama, harga, dan stok), kemudian mencetak identitas pembuat program.  
 
 ---
 
