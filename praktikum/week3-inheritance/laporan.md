@@ -178,7 +178,8 @@ public class MainInheritance {
         CreditBy.print("240202864", "Hanifah");
     }
 }
-)```
+)
+```
 ---
 
 ## Hasil Eksekusi
