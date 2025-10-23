@@ -182,7 +182,8 @@ public class MainInheritance {
 ---
 
 ## Hasil Eksekusi
-c:\Users\ASUS\Pictures\Screenshots\Cuplikan layar 2025-10-22 120650.png
+<img width="1366" height="768" alt="Cuplikan layar 2025-10-22 120650" src="https://github.com/user-attachments/assets/0126cd06-b67f-4a7c-a179-994f61e5e88c" />
+
 ---
 
 ## Analisis
