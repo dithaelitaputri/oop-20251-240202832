@@ -19,8 +19,8 @@ Mahasiswa mampu membuat laporan praktikum yang menjelaskan perbedaan penggunaan 
 
 ## Dasar Teori
 Inheritance (pewarisan) adalah konsep dalam pemrograman berorientasi objek (OOP) yang memungkinkan sebuah class mewarisi sifat dan perilaku dari class lain.
- -Superclass adalah class induk yang berisi atribut dan fungsi umum.
- -Subclass adalah class turunan yang mengambil atribut dan fungsi dari superclass, lalu bisa menambahkan hal-hal baru sesuai kebutuhannya.
+  -Superclass adalah class induk yang berisi atribut dan fungsi umum.
+  -Subclass adalah class turunan yang mengambil atribut dan fungsi dari superclass, lalu bisa menambahkan hal-hal baru sesuai kebutuhannya.
  -Kata kunci super digunakan untuk memanggil konstruktor atau method milik superclass.
 Dalam contoh sistem Agri-POS, kita bisa membuat class Produk sebagai class induk, lalu membuat class Benih, Pupuk, dan AlatPertanian sebagai class turunannya.
 
