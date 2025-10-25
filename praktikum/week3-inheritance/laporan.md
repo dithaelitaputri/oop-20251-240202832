@@ -59,9 +59,9 @@ System.out.println(p1.getNama());
 ---
 
 ## Hasil Eksekusi
-(Sertakan screenshot hasil eksekusi program.  
-![Screenshot hasil](screenshots/hasil.png)
-)
+<img width="1920" height="1080" alt="hasil week 3" src="https://github.com/user-attachments/assets/ba14b5db-17bf-4c23-9123-59324489af21" />
+
+
 ---
 
 ## Analisis
