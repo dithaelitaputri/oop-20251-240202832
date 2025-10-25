@@ -9,25 +9,41 @@ Topik: Bab 3 – Inheritance
 ---
 
 ## Tujuan
-(Tuliskan tujuan praktikum minggu ini.  
-Contoh: *Mahasiswa memahami konsep class dan object serta dapat membuat class Produk dengan enkapsulasi.*)
+Mahasiswa mampu menjelaskan konsep inheritance (pewarisan class) dalam OOP.
+Mahasiswa mampu membuat superclass dan subclass untuk produk pertanian.
+Mahasiswa mampu mendemonstrasikan hierarki class melalui contoh kode.
+Mahasiswa mampu menggunakan super untuk memanggil konstruktor dan method parent class.
+Mahasiswa mampu membuat laporan praktikum yang menjelaskan perbedaan penggunaan inheritance dibanding class tunggal.
 
 ---
 
 ## Dasar Teori
-(Tuliskan ringkasan teori singkat (3–5 poin) yang mendasari praktikum.  
-Contoh:  
-1. Class adalah blueprint dari objek.  
-2. Object adalah instansiasi dari class.  
-3. Enkapsulasi digunakan untuk menyembunyikan data.)
+Inheritance (pewarisan) adalah konsep dalam pemrograman berorientasi objek (OOP) yang memungkinkan sebuah class mewarisi sifat dan perilaku dari class lain.
+ -Superclass adalah class induk yang berisi atribut dan fungsi umum.
+ -Subclass adalah class turunan yang mengambil atribut dan fungsi dari superclass, lalu bisa menambahkan hal-hal baru sesuai kebutuhannya.
+ -Kata kunci super digunakan untuk memanggil konstruktor atau method milik superclass.
+Dalam contoh sistem Agri-POS, kita bisa membuat class Produk sebagai class induk, lalu membuat class Benih, Pupuk, dan AlatPertanian sebagai class turunannya.
 
 ---
 
 ## Langkah Praktikum
-(Tuliskan Langkah-langkah dalam prakrikum, contoh:
-1. Langkah-langkah yang dilakukan (setup, coding, run).  
-2. File/kode yang dibuat.  
-3. Commit message yang digunakan.)
+1. **Membuat Superclass Produk**
+    - Gunakan class `Produk` dari Bab 2 sebagai superclass.
+
+2. **Membuat Subclass**
+    - `Benih.java` → atribut tambahan: varietas.
+    - `Pupuk.java` → atribut tambahan: jenis pupuk (Urea, NPK, dll).
+    - `AlatPertanian.java` → atribut tambahan: material (baja, kayu, plastik).
+
+3. **Membuat Main Class**
+    - Instansiasi minimal satu objek dari tiap subclass.
+    - Tampilkan data produk dengan memanfaatkan inheritance.
+
+4. **Menambahkan CreditBy**
+    - Panggil class `CreditBy` untuk menampilkan identitas mahasiswa.
+
+5. **Commit dan Push**
+    - Commit dengan pesan: `week3-inheritance`.
 
 ---
 
