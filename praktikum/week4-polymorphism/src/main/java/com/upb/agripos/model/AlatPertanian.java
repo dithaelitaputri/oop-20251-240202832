@@ -1,16 +1,20 @@
 package com.upb.agripos.model;
 
-public class AlatPertanian {
-    private String nama;
-    private double harga;
+public class AlatPertanian extends Produk {
+    private String bahan;
 
-    public AlatPertanian(String nama, double harga) {
-        this.nama = nama;
-        this.harga = harga;
+    public AlatPertanian(String kode, String nama, double harga, int stok, String bahan) {
+        super(kode, nama, harga, stok);
+        this.bahan = bahan;
     }
 
-    public void tampilInfo() {
-        System.out.println("Nama Alat: " + nama);
-        System.out.println("Harga: " + harga);
+    @Override
+    public String getInfo() {
+        return "Alat Pertanian\n----------------------------------\n"
+             + "Produk : " + getNama() + "\n"
+             + "Kode   : " + getKode() + "\n"
+             + "Harga  : Rp" + getHarga() + "\n"
+             + "Stok   : " + getStok() + "\n"
+             + "Bahan  : " + bahan + "\n";
     }
 }

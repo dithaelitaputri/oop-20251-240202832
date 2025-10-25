@@ -1,16 +1,20 @@
 package com.upb.agripos.model;
 
-public class Pupuk {
+public class Pupuk extends Produk {
     private String jenis;
-    private double harga;
 
-    public Pupuk(String jenis, double harga) {
+    public Pupuk(String kode, String nama, double harga, int stok, String jenis) {
+        super(kode, nama, harga, stok);
         this.jenis = jenis;
-        this.harga = harga;
     }
 
-    public void tampilInfo() {
-        System.out.println("Jenis Pupuk: " + jenis);
-        System.out.println("Harga: " + harga);
+    @Override
+    public String getInfo() {
+        return "Pupuk\n----------------------------------\n"
+             + "Produk : " + getNama() + "\n"
+             + "Kode   : " + getKode() + "\n"
+             + "Harga  : Rp" + getHarga() + "\n"
+             + "Stok   : " + getStok() + "\n"
+             + "Jenis  : " + jenis + "\n";
     }
 }
