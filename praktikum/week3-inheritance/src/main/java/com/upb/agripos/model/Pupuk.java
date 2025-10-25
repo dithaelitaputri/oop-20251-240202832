@@ -17,9 +17,4 @@ public class Pupuk extends Produk {
         System.out.println("Jenis: " + jenis);
         System.out.println("Keterangan: Pupuk ini membantu meningkatkan kesuburan tanah dan hasil panen.");
     }
-
-    private void tampilInfo() {
-       
-        throw new UnsupportedOperationException("Unimplemented method 'tampilInfo'");
-    }
 }

@@ -17,9 +17,4 @@ public class Benih extends Produk {
         System.out.println("Varietas: " + varietas);
         System.out.println("Keterangan: Benih ini cocok untuk berbagai jenis lahan dan tahan terhadap hama.");
     }
-
-    private void tampilInfo() {
-       
-        throw new UnsupportedOperationException("Unimplemented method 'tampilInfo'");
-    }
 }

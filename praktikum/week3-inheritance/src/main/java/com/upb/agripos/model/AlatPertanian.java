@@ -1,5 +1,6 @@
 package com.upb.agripos.model;
 
+
 public class AlatPertanian extends Produk {
     private String material;
 
@@ -17,10 +18,5 @@ public class AlatPertanian extends Produk {
         System.out.println("Material: " + material);
         System.out.println("Keterangan: Alat pertanian ini terbuat dari material kuat dan tahan lama.");
     }
-
-        private void tampilInfo() {
-        
-            throw new UnsupportedOperationException("Unimplemented method 'tampilInfo'");
-        }
 
 }
