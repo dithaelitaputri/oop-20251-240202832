@@ -48,27 +48,191 @@ Dalam contoh sistem Agri-POS, kita bisa membuat class Produk sebagai class induk
 ---
 
 ## Kode Program
-(Tuliskan kode utama yang dibuat, contoh:  
+
+
+## 1. Produk.java
 
 ```java
-// Contoh
-Produk p1 = new Produk("BNH-001", "Benih Padi", 25000, 100);
-System.out.println(p1.getNama());
+package com.upb.agripos.model;
+// Produk.java
+
+public class Produk {
+    private String kode;
+    private String nama;
+    private double harga;
+    private int stok;
+
+    public Produk(String kode, String nama, double harga, int stok) {
+        this.kode = kode;
+        this.nama = nama;
+        this.harga = harga;
+        this.stok = stok;
+    }
+
+    public String getKode() { return kode; }
+    public String getNama() { return nama; }
+    public double getHarga() { return harga; }
+    public int getStok() { return stok; }
+
+    public void setKode(String kode) { this.kode = kode; }
+    public void setNama(String nama) { this.nama = nama; }
+    public void setHarga(double harga) { this.harga = harga; }
+    public void setStok(int stok) { this.stok = stok; }
+
+    public void tampilInfo() {
+        System.out.println("Kode: " + kode);
+        System.out.println("Nama: " + nama);
+        System.out.println("Harga: Rp" + harga);
+        System.out.println("Stok: " + stok);
+    }
+
+}
 ```
-)
+
+## 2. Benih.java
+```java
+package com.upb.agripos.model;
+
+public class Benih extends Produk {
+    private String varietas;
+
+    public Benih(String kode, String nama, double harga, int stok, String varietas) {
+        super(kode, nama, harga, stok);
+        this.varietas = varietas;
+    }
+
+    public String getVarietas() { return varietas; }
+    public void setVarietas(String varietas) { this.varietas = varietas; }
+
+    public void deskripsi() {
+        System.out.println("=== Benih ===");
+        tampilInfo();
+        System.out.println("Varietas: " + varietas);
+        System.out.println("Keterangan: Benih ini cocok untuk berbagai jenis lahan dan tahan terhadap hama.");
+    }
+}
+```
+
+## 3. Pupuk.java
+```java
+package com.upb.agripos.model;
+
+public class Pupuk extends Produk {
+    private String jenis;
+
+    public Pupuk(String kode, String nama, double harga, int stok, String jenis) {
+        super(kode, nama, harga, stok);
+        this.jenis = jenis;
+    }
+
+    public String getJenis() { return jenis; }
+    public void setJenis(String jenis) { this.jenis = jenis; }
+
+    public void deskripsi() {
+        System.out.println("=== Pupuk ===");
+        tampilInfo();
+        System.out.println("Jenis: " + jenis);
+        System.out.println("Keterangan: Pupuk ini membantu meningkatkan kesuburan tanah dan hasil panen.");
+    }
+}
+```
+
+### 4. AlatPertanian.java
+```java
+package com.upb.agripos.model;
+
+
+public class AlatPertanian extends Produk {
+    private String material;
+
+    public AlatPertanian(String kode, String nama, double harga, int stok, String material) {
+        super(kode, nama, harga, stok);
+        this.material = material;
+    }
+
+    public String getMaterial() { return material; }
+    public void setMaterial(String material) { this.material = material; }
+
+        public void deskripsi() {
+        System.out.println("=== Alat Pertanian ===");
+        tampilInfo();
+        System.out.println("Material: " + material);
+        System.out.println("Keterangan: Alat pertanian ini terbuat dari material kuat dan tahan lama.");
+    }
+
+}
+```
+
+### 5.CreaditBy.java
+```java
+package com.upb.agripos.util;
+
+public class CreditBy {
+    public static void print(String nim, String nama) {
+        System.out.println("\n=== Credit By ===");
+        System.out.println("NIM  : " + nim);
+        System.out.println("Nama : " + nama);
+    }
+}
+```
+
+## 6.MainInheritance.java
+```java
+package com.upb.agripos;
+
+import com.upb.agripos.model.*;
+import com.upb.agripos.util.CreditBy;
+
+public class MainInheritance {
+    public static void main(String[] args) {
+        Benih b = new Benih("BNH-001", "Benih Padi IR64", 25000, 100, "IR64");
+        Pupuk p = new Pupuk("PPK-101", "Pupuk Urea", 350000, 40, "Urea");
+        AlatPertanian a = new AlatPertanian("ALT-501", "Cangkul Baja", 90000, 15, "Baja");
+
+        b.deskripsi();
+        System.out.println();
+        p.deskripsi();
+        System.out.println();
+        a.deskripsi();
+        System.out.println();
+
+        CreditBy.print("240202832", "Ditha Elita Putri");
+    }
+}
+```
 ---
+
 
 ## Hasil Eksekusi
 <img width="1920" height="1080" alt="hasil week 3" src="https://github.com/user-attachments/assets/ba14b5db-17bf-4c23-9123-59324489af21" />
-
-
 ---
+
 
 ## Analisis
 (
-- Jelaskan bagaimana kode berjalan.  
-- Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.  
-- Kendala yang dihadapi dan cara mengatasinya.  
+Pada praktikum minggu ini, saya menerapkan konsep inheritance di Java dengan menjadikan Produk sebagai superclass, serta Benih, Pupuk, dan AlatPertanian sebagai subclass yang mewarisi atribut dan method dari Produk.
+
+Awalnya saya mengalami kendala karena struktur package tidak sesuai dengan deklarasi package com.upb.agripos.model;, sehingga file tidak dikenali saat dijalankan.
+
+Solusi: menyesuaikan struktur folder menjadi src/main/java/com/upb/agripos/... sesuai dengan penulisan package pada setiap file. Setelah itu, program berhasil dikompilasi dan dijalankan tanpa error.
+
+Class Produk berisi atribut umum (kode, nama, harga, stok) dan method tampilInfo() untuk menampilkan data produk.
+
+Tiga subclass dibuat untuk menambahkan atribut khusus:
+
+Benih → atribut tambahan varietas
+
+Pupuk → atribut tambahan jenis
+
+AlatPertanian → atribut tambahan material
+
+Masing-masing subclass memiliki method deskripsi() yang menampilkan detail produk, serta memanggil method tampilInfo() dari superclass menggunakan pewarisan.
+
+Pada MainInheritance, saya membuat objek dari setiap subclass dan menambahkan System.out.println() agar hasil antar produk tidak menempel saat ditampilkan di konsol.
+
+Class CreditBy ditempatkan di package util untuk menampilkan identitas mahasiswa.
+
+Dibandingkan minggu sebelumnya, pendekatan ini lebih efisien dan terstruktur karena dengan inheritance, atribut dan method umum cukup ditulis sekali di superclass. Hal ini membuat kode lebih rapi, mudah dibaca, dan mudah dikembangkan.
 )
 ---
 
