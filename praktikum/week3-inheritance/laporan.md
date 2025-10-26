@@ -228,8 +228,7 @@ Dibandingkan minggu sebelumnya, pendekatan ini lebih efisien dan terstruktur kar
 ---
 
 ## Kesimpulan
-(Tuliskan kesimpulan dari praktikum minggu ini.  
-Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur dan mudah dikembangkan.*)
+Dengan menerapkan konsep inheritance, program menjadi lebih terstruktur, efisien, dan mudah dikembangkan. Atribut serta method yang bersifat umum cukup dibuat satu kali di superclass (Produk), lalu dapat digunakan oleh berbagai subclass tanpa perlu penulisan ulang. Pendekatan ini membuat kode lebih rapi, meminimalkan duplikasi, serta memudahkan perawatan dan pengembangan sistem di masa mendatang.
 
 ---
 
