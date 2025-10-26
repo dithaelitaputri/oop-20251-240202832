@@ -9,12 +9,12 @@ Topik: Bab 3 – Inheritance
 ---
 
 ## Tujuan
-Mahasiswa mampu menjelaskan konsep inheritance (pewarisan class) dalam OOP.
-Mahasiswa mampu membuat superclass dan subclass untuk produk pertanian.
-Mahasiswa mampu mendemonstrasikan hierarki class melalui contoh kode.
-Mahasiswa mampu menggunakan super untuk memanggil konstruktor dan method parent class.
-Mahasiswa mampu membuat laporan praktikum yang menjelaskan perbedaan penggunaan inheritance dibanding class tunggal.
-
+- Mahasiswa mampu **menjelaskan konsep inheritance (pewarisan class)** dalam OOP.  
+- Mahasiswa mampu **membuat superclass dan subclass** untuk produk pertanian.  
+- Mahasiswa mampu **mendemonstrasikan hierarki class** melalui contoh kode.  
+- Mahasiswa mampu **menggunakan `super` untuk memanggil konstruktor dan method parent class**.  
+- Mahasiswa mampu **membuat laporan praktikum** yang menjelaskan perbedaan penggunaan inheritance dibanding class tunggal.
+  
 ---
 
 ## Dasar Teori
@@ -79,11 +79,12 @@ Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur 
 ---
 
 ## Quiz
-(1. [Tuliskan kembali pertanyaan 1 dari panduan]  
+1. Apa keuntungan menggunakan inheritance dibanding membuat class terpisah tanpa hubungan?  
    **Jawaban:** …  
 
-2. [Tuliskan kembali pertanyaan 2 dari panduan]  
+2. Bagaimana cara subclass memanggil konstruktor superclass?  
    **Jawaban:** …  
 
-3. [Tuliskan kembali pertanyaan 3 dari panduan]  
-   **Jawaban:** …  )
+3. Berikan contoh kasus di POS pertanian selain Benih, Pupuk, dan Alat Pertanian yang bisa dijadikan subclass.  
+   **Jawaban:** …  
+
