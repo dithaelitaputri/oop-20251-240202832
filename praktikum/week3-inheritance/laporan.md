@@ -202,38 +202,29 @@ public class MainInheritance {
 ```
 ---
 
-
 ## Hasil Eksekusi
 <img width="1920" height="1080" alt="hasil week 3" src="https://github.com/user-attachments/assets/ba14b5db-17bf-4c23-9123-59324489af21" />
 ---
 
-
 ## Analisis
-(
 Pada praktikum minggu ini, saya menerapkan konsep inheritance di Java dengan menjadikan Produk sebagai superclass, serta Benih, Pupuk, dan AlatPertanian sebagai subclass yang mewarisi atribut dan method dari Produk.
 
 Awalnya saya mengalami kendala karena struktur package tidak sesuai dengan deklarasi package com.upb.agripos.model;, sehingga file tidak dikenali saat dijalankan.
 
-Solusi: menyesuaikan struktur folder menjadi src/main/java/com/upb/agripos/... sesuai dengan penulisan package pada setiap file. Setelah itu, program berhasil dikompilasi dan dijalankan tanpa error.
+Solusi menyesuaikan struktur folder menjadi src.main.java.comu.upb.agripos... sesuai dengan penulisan package pada setiap file. Setelah itu, program berhasil dikompilasi dan dijalankan tanpa error.
 
 Class Produk berisi atribut umum (kode, nama, harga, stok) dan method tampilInfo() untuk menampilkan data produk.
 
 Tiga subclass dibuat untuk menambahkan atribut khusus:
-
 Benih → atribut tambahan varietas
-
 Pupuk → atribut tambahan jenis
-
 AlatPertanian → atribut tambahan material
 
 Masing-masing subclass memiliki method deskripsi() yang menampilkan detail produk, serta memanggil method tampilInfo() dari superclass menggunakan pewarisan.
-
 Pada MainInheritance, saya membuat objek dari setiap subclass dan menambahkan System.out.println() agar hasil antar produk tidak menempel saat ditampilkan di konsol.
-
 Class CreditBy ditempatkan di package util untuk menampilkan identitas mahasiswa.
-
 Dibandingkan minggu sebelumnya, pendekatan ini lebih efisien dan terstruktur karena dengan inheritance, atribut dan method umum cukup ditulis sekali di superclass. Hal ini membuat kode lebih rapi, mudah dibaca, dan mudah dikembangkan.
-)
+
 ---
 
 ## Kesimpulan
@@ -244,10 +235,10 @@ Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur 
 
 ## Quiz
 1. Apa keuntungan menggunakan inheritance dibanding membuat class terpisah tanpa hubungan?  
-   **Jawaban:** …  
+   **Jawaban:** Inheritance membuat kode lebih efisien dan rapi karena atribut dan method umum cukup ditulis sekali di superclass, lalu bisa digunakan oleh semua subclass tanpa harus mengulang kode.
 
 2. Bagaimana cara subclass memanggil konstruktor superclass?  
-   **Jawaban:** …  
+   **Jawaban:** 
 
 3. Berikan contoh kasus di POS pertanian selain Benih, Pupuk, dan Alat Pertanian yang bisa dijadikan subclass.  
    **Jawaban:** …  
