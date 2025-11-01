@@ -22,7 +22,7 @@ Inheritance (pewarisan) adalah konsep dalam pemrograman berorientasi objek (OOP)
   -Superclass adalah class induk yang berisi atribut dan fungsi umum.
   -Subclass adalah class turunan yang mengambil atribut dan fungsi dari superclass, lalu bisa menambahkan hal-hal baru sesuai kebutuhannya.
  -Kata kunci super digunakan untuk memanggil konstruktor atau method milik superclass.
-Dalam contoh sistem Agri-POS, kita bisa membuat class Produk sebagai class induk, lalu membuat class Benih, Pupuk, dan AlatPertanian sebagai class turunannya.
+- Dalam contoh sistem Agri-POS, kita bisa membuat class Produk sebagai class induk, lalu membuat class Benih, Pupuk, dan AlatPertanian sebagai class turunannya.
 
 ---
 
@@ -207,14 +207,13 @@ public class MainInheritance {
 ---
 
 ## Analisis
-Pada praktikum minggu ini, saya menerapkan konsep inheritance di Java dengan menjadikan Produk sebagai superclass, serta Benih, Pupuk, dan AlatPertanian sebagai subclass yang mewarisi atribut dan method dari Produk.
+- Pada praktikum minggu ini, saya menerapkan konsep inheritance di Java dengan menjadikan Produk sebagai superclass, serta Benih, Pupuk, dan AlatPertanian sebagai subclass yang mewarisi atribut dan method dari Produk.
 
-Awalnya saya mengalami kendala karena struktur package tidak sesuai dengan deklarasi package com.upb.agripos.model;, sehingga file tidak dikenali saat dijalankan.
+- Awalnya saya mengalami kendala karena struktur package tidak sesuai dengan deklarasi package com.upb.agripos.model;, sehingga file tidak dikenali saat dijalankan.
 
-Solusi menyesuaikan struktur folder menjadi src.main.java.comu.upb.agripos... sesuai dengan penulisan package pada setiap file. Setelah itu, program berhasil dikompilasi dan dijalankan tanpa error.
+- Solusi menyesuaikan struktur folder menjadi src.main.java.comu.upb.agripos... sesuai dengan penulisan package pada setiap file. Setelah itu, program berhasil dikompilasi dan dijalankan tanpa error.
 
 Class Produk berisi atribut umum (kode, nama, harga, stok) dan method tampilInfo() untuk menampilkan data produk.
-
 Tiga subclass dibuat untuk menambahkan atribut khusus:
 Benih → atribut tambahan varietas
 Pupuk → atribut tambahan jenis
@@ -234,11 +233,15 @@ Dengan menerapkan konsep inheritance, program menjadi lebih terstruktur, efisien
 
 ## Quiz
 1. Apa keuntungan menggunakan inheritance dibanding membuat class terpisah tanpa hubungan?  
-   **Jawaban:** Inheritance membuat kode lebih efisien dan rapi karena atribut dan method umum cukup ditulis sekali di superclass, lalu bisa digunakan oleh semua subclass tanpa harus mengulang kode.
+   **Jawaban:** Dengan inheritance, kita tidak perlu menulis kode yang sama berulang kali. Class turunan bisa langsung memakai atribut dan method dari class induk, jadi kode lebih singkat, rapi, dan mudah diubah kalau ada perbaikan
 
 2. Bagaimana cara subclass memanggil konstruktor superclass?  
-   **Jawaban:** 
+   **Jawaban:** Subclass bisa memanggil konstruktor dari superclass dengan keyword super(), biasanya ditulis di baris pertama konstruktor subclass.
 
 3. Berikan contoh kasus di POS pertanian selain Benih, Pupuk, dan Alat Pertanian yang bisa dijadikan subclass.  
-   **Jawaban:** …  
+   **Jawaban:** Contohnya HasilPanen. Class ini bisa dibuat sebagai turunan dari Produk karena hasil panen juga termasuk barang yang dijual di sistem pertanian.
+Atribut tambahannya bisa seperti:
+jenisTanaman (misalnya: padi, jagung, sayur)
+beratPanen (dalam kilogram)
+Dengan begitu, HasilPanen bisa menyimpan data produk hasil panen lengkap, tapi tetap memakai atribut umum dari Produk seperti kode, nama, harga, dan stok.
 
