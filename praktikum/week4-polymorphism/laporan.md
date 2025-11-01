@@ -247,11 +247,12 @@ public class MainPolymorphism {
 ---
 
 ## Analisis
-(
-- Jelaskan bagaimana kode berjalan.  
-- Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.  
-- Kendala yang dihadapi dan cara mengatasinya.  
-)
+- Pada percobaan kali ini, konsep polymorphism diterapkan melalui tiga bentuk utama, yaitu overloading, overriding, dan dynamic binding.
+Program dimulai dari class Produk sebagai superclass yang memiliki method tambahStok() dengan dua versi berbeda (parameter int dan double), ini menunjukkan method overloading. Perbedaan parameter membuat method bisa dipanggil dengan nilai berbeda tanpa menimbulkan error.
+- Selanjutnya, masing-masing subclass (Benih, Pupuk, AlatPertanian, dan ObatHama) melakukan method overriding terhadap getInfo(). Dengan begitu, setiap subclass menampilkan informasi yang lebih spesifik sesuai jenis produknya. Misalnya, Benih menampilkan atribut “Varietas”, sedangkan Pupuk menampilkan “Jenis”.
+- Bagian dynamic binding terlihat saat array Produk[] daftarProduk berisi berbagai objek subclass. Walaupun semua elemen bertipe Produk, ketika dilakukan pemanggilan getInfo(), Java secara otomatis memanggil method sesuai jenis objek sebenarnya di runtime. Hal ini membuktikan bahwa Java mendukung polymorphism secara dinamis.
+- Dibandingkan minggu sebelumnya yang hanya berfokus pada inheritance tanpa perilaku dinamis, minggu ini lebih menekankan bagaimana satu referensi superclass dapat merujuk ke berbagai bentuk objek turunan.
+Kendala yang sempat muncul adalah saat mencoba memanggil method dari subclass tanpa casting yang tepat, namun setelah memahami konsep dynamic dispatch, masalah tersebut bisa teratasi.
 ---
 
 ## Kesimpulan
