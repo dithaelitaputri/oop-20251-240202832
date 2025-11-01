@@ -207,22 +207,13 @@ public class MainInheritance {
 ---
 
 ## Analisis
-- Pada praktikum minggu ini, saya menerapkan konsep inheritance di Java dengan menjadikan Produk sebagai superclass, serta Benih, Pupuk, dan AlatPertanian sebagai subclass yang mewarisi atribut dan method dari Produk.
-
-- Awalnya saya mengalami kendala karena struktur package tidak sesuai dengan deklarasi package com.upb.agripos.model;, sehingga file tidak dikenali saat dijalankan.
-
-- Solusi menyesuaikan struktur folder menjadi src.main.java.comu.upb.agripos... sesuai dengan penulisan package pada setiap file. Setelah itu, program berhasil dikompilasi dan dijalankan tanpa error.
-
-Class Produk berisi atribut umum (kode, nama, harga, stok) dan method tampilInfo() untuk menampilkan data produk.
-Tiga subclass dibuat untuk menambahkan atribut khusus:
-Benih → atribut tambahan varietas
-Pupuk → atribut tambahan jenis
-AlatPertanian → atribut tambahan material
-
-Masing-masing subclass memiliki method deskripsi() yang menampilkan detail produk, serta memanggil method tampilInfo() dari superclass menggunakan pewarisan.
-Pada MainInheritance, saya membuat objek dari setiap subclass dan menambahkan System.out.println() agar hasil antar produk tidak menempel saat ditampilkan di konsol.
-Class CreditBy ditempatkan di package util untuk menampilkan identitas mahasiswa.
-Dibandingkan minggu sebelumnya, pendekatan ini lebih efisien dan terstruktur karena dengan inheritance, atribut dan method umum cukup ditulis sekali di superclass. Hal ini membuat kode lebih rapi, mudah dibaca, dan mudah dikembangkan.
+- Pada praktikum minggu ini, saya mempelajari dan menerapkan konsep inheritance di Java. Saya membuat class Produk sebagai superclass, lalu menurunkan tiga class yaitu Benih, Pupuk, dan AlatPertanian sebagai subclass yang mewarisi atribut dan method dari class induknya.
+- Di awal, saya sempat mengalami kendala karena struktur folder tidak sesuai dengan deklarasi package com.upb.agripos.model, sehingga file tidak terbaca saat dijalankan. Setelah saya ubah struktur folder menjadi sesuai dengan penulisan package pada setiap file, program akhirnya bisa dikompilasi dan dijalankan tanpa error.
+- Class Produk berisi atribut umum seperti kode, nama, harga, dan stok, serta method tampilInfo() untuk menampilkan data produk. Kemudian, masing-masing subclass saya tambahkan atribut khusus, yaitu:
+Benih,memiliki atribut varietas,
+Pupuk, memiliki atribut jenis, dan
+AlatPertanian, memiliki atribut material.
+-Setiap subclass juga memiliki method deskripsi() untuk menampilkan detail produk sekaligus memanggil method tampilInfo() dari superclass. Di class MainInheritance, saya membuat objek dari masing-masing subclass dan menambahkan beberapa System.out.println() agar hasil antar produk terlihat lebih rapi di konsol.
 
 ---
 
