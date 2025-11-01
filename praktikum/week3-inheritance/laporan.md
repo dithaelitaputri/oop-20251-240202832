@@ -210,10 +210,10 @@ public class MainInheritance {
 - Pada praktikum minggu ini, saya mempelajari dan menerapkan konsep inheritance di Java. Saya membuat class Produk sebagai superclass, lalu menurunkan tiga class yaitu Benih, Pupuk, dan AlatPertanian sebagai subclass yang mewarisi atribut dan method dari class induknya.
 - Di awal, saya sempat mengalami kendala karena struktur folder tidak sesuai dengan deklarasi package com.upb.agripos.model, sehingga file tidak terbaca saat dijalankan. Setelah saya ubah struktur folder menjadi sesuai dengan penulisan package pada setiap file, program akhirnya bisa dikompilasi dan dijalankan tanpa error.
 - Class Produk berisi atribut umum seperti kode, nama, harga, dan stok, serta method tampilInfo() untuk menampilkan data produk. Kemudian, masing-masing subclass saya tambahkan atribut khusus, yaitu:
-Benih,memiliki atribut varietas,
-Pupuk, memiliki atribut jenis, dan
-AlatPertanian, memiliki atribut material.
--Setiap subclass juga memiliki method deskripsi() untuk menampilkan detail produk sekaligus memanggil method tampilInfo() dari superclass. Di class MainInheritance, saya membuat objek dari masing-masing subclass dan menambahkan beberapa System.out.println() agar hasil antar produk terlihat lebih rapi di konsol.
+   - Benih,memiliki atribut varietas,
+   - Pupuk, memiliki atribut jenis, dan
+   - AlatPertanian, memiliki atribut material.
+- Setiap subclass juga memiliki method deskripsi() untuk menampilkan detail produk sekaligus memanggil method tampilInfo() dari superclass. Di class MainInheritance, saya membuat objek dari masing-masing subclass dan menambahkan beberapa System.out.println() agar hasil antar produk terlihat lebih rapi di konsol.
 
 ---
 
