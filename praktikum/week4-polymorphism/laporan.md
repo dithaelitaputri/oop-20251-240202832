@@ -275,4 +275,4 @@ Java menentukan method yang dipanggil berdasarkan tipe objek sebenarnya di runti
 
 3. Berikan contoh kasus polymorphism dalam sistem POS selain produk pertanian.  
    **Jawaban:**
-Misalnya dalam sistem POS untuk supermarket, class Barang bisa memiliki subclass seperti Makanan, Minuman, dan Elektronik. Semua memiliki method getInfo(), namun hasilnya berbeda — Makanan menampilkan tanggal kedaluwarsa, Minuman menampilkan volume, dan Elektronik menampilkan garansi.
+Misalnya dalam sistem POS untuk supermarket, class Barang bisa memiliki subclass seperti Makanan, Minuman, dan Elektronik. Semua memiliki method getInfo(), namun hasilnya berbeda Makanan menampilkan tanggal kedaluwarsa, Minuman menampilkan volume, dan Elektronik menampilkan garansi.
