@@ -1,5 +1,5 @@
 # Laporan Praktikum Minggu 5 
-Topik: "Main Abstrac"
+Topik: "Main Abstraction"
 
 ## Identitas
 - Nama  : Ditha Elita Putri
