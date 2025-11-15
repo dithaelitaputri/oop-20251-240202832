@@ -129,21 +129,173 @@ public class Cash extends Pembayaran implements Receiptable {
 ### Ewallet.java
 
 ```java
+package com.upb.agripos.model.pembayaran;
 
+import com.upb.agripos.model.kontrak.Validatable;
+import com.upb.agripos.model.kontrak.Receiptable;
 
----
+public class EWallet extends Pembayaran implements Validatable, Receiptable {
+    private final String akun;
+    private final String otp; // sederhana untuk simulasi
+
+    public EWallet(String invoiceNo, double total, String akun, String otp) {
+        super(invoiceNo, total);
+        this.akun = akun;
+        this.otp = otp;
+    }
+
+    @Override
+    public double biaya() {
+        return total * 0.015; // 1.5% fee
+    }
+
+    @Override
+    public boolean validasi() {
+        return otp != null && otp.length() == 6; // contoh validasi sederhana
+    }
+
+    @Override
+    public boolean prosesPembayaran() {
+        return validasi(); // jika validasi lolos, anggap berhasil
+    }
+
+    @Override
+   public String cetakStruk() {
+    // Panggil prosesPembayaran() untuk menentukan status
+    String status = prosesPembayaran() ? "BERHASIL" : "GAGAL (Validasi Gagal)";
+
+    return "==== STRUK PEMBAYARAN E-WALLET ====\n" +
+           "Invoice No.   : " + this.invoiceNo + "\n" +
+           "Akun E-Wallet : " + this.akun + "\n" + // Tambahkan detail akun
+           "Total Belanja : Rp " + String.format("%,.2f", this.total) + "\n" +
+           "Biaya (1.5%)  : Rp " + String.format("%,.2f", this.biaya()) + "\n" +
+           "--------------------------------------\n" +
+           "TOTAL BAYAR   : Rp " + String.format("%,.2f", this.totalBayar()) + "\n" +
+           "STATUS        : " + status + "\n" +
+           "--------------------------------------\n" ;
+    }
+}
 
 ```
 
-### Validatable.java
+### Pembayaran.java
+```java
+package com.upb.agripos.model.pembayaran;
+
+public abstract class Pembayaran {
+    protected String invoiceNo;
+    protected double total;
+
+    public Pembayaran(String invoiceNo, double total) {
+        this.invoiceNo = invoiceNo;
+        this.total = total;
+    }
+
+    public abstract double biaya();               // biaya tambahan/admin
+    public abstract boolean prosesPembayaran();   // proses spesifik tiap metode
+
+    public double totalBayar() {
+        return total + biaya();
+    }
+
+    public String getInvoiceNo() { return invoiceNo; }
+    public double getTotal() { return total; }
+}
+
+```
+
+
+### TransferBank.java
+```java
+package com.upb.agripos.model.pembayaran;
+
+import com.upb.agripos.model.kontrak.Validatable;
+import com.upb.agripos.model.kontrak.Receiptable;
+
+public class TransferBank extends Pembayaran implements Validatable, Receiptable {
+    
+    // Biaya tetap: Rp3500
+    private static final double BIAYA_TETAP = 3500.0;
+    private String kodeKonfirmasi; // Field untuk simulasi validasi
+
+    public TransferBank(String invoiceNo, double total, String kodeKonfirmasi) {
+        super(invoiceNo, total);
+        this.kodeKonfirmasi = kodeKonfirmasi;
+    }
+
+    // Metode Abstrak Pembayaran
+    @Override
+    public double biaya() {
+        return BIAYA_TETAP;
+    }
+
+    @Override
+    public boolean prosesPembayaran() {
+        // Pembayaran berhasil jika validasi sukses
+        if (this.validasi()) {
+          //  System.out.println("[TransferBank] Pembayaran diproses sebesar Rp " + String.format("%,.0f", this.totalBayar()));
+            return true;
+        }
+        return false;
+    }
+
+    // Metode Interface Validatable
+    @Override
+    public boolean validasi() {
+        // Contoh validasi: Kode konfirmasi harus 4 digit
+        boolean isValid = kodeKonfirmasi != null && kodeKonfirmasi.length() == 4;
+        // System.out.println("[TransferBank] Validasi Kode Konfirmasi (4 digit) " + (isValid ? "BERHASIL." : "GAGAL!"));
+        return isValid;
+    }
+
+    // Metode Interface Receiptable
+    @Override
+    public String cetakStruk() {
+        String status = prosesPembayaran() ? "BERHASIL" : "GAGAL (Konfirmasi Salah)";
+
+        return "\n=== STRUK PEMBAYARAN TRANSFER BANK ===\n" +
+               "Invoice No.   : " + this.invoiceNo + "\n" +
+               "Total Belanja : Rp " + String.format("%,.0f", this.total) + "\n" +
+               "Biaya (Tetap) : Rp " + String.format("%,.0f", this.biaya()) + "\n" +
+               "--------------------------------------\n" +
+               "TOTAL BAYAR   : Rp " + String.format("%,.0f", this.totalBayar()) + "\n" +
+               "STATUS        : " + status + "\n" +
+               "--------------------------------------";
+    }
+}
+```
+
+### MainAbstraction.java
+```java
+package com.upb.agripos;
+
+import com.upb.agripos.model.pembayaran.*;
+import com.upb.agripos.model.kontrak.*;
+import com.upb.agripos.util.CreditBy;
+
+public class MainAbstraction {
+    public static void main(String[] args) {
+        Pembayaran cash = new Cash("DTH-001", 120000, 150000);
+        Pembayaran ew = new EWallet("DTH-002", 150000, "dithael", "123456");
+        Pembayaran transfer = new TransferBank("DTH-003", 250000.0, "9876");
+
+        System.out.println(((Receiptable) cash).cetakStruk());
+        System.out.println(((Receiptable) ew).cetakStruk());
+        System.out.println(((Receiptable) transfer).cetakStruk());
+
+     // Credit info
+    CreditBy.print("240202832", "Ditha Elita Putri");
+    }
+}
+
 
 ---
 
 
 ## Hasil Eksekusi
-(Sertakan screenshot hasil eksekusi program.  
-![Screenshot hasil](screenshots/hasil.png)
-)
+
+c:\Users\HP\Pictures\Screenshots\hasil week5-mainabstraction.png
+
 ---
 
 ## Analisis
