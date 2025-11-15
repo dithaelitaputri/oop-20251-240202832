@@ -262,9 +262,10 @@ public class TransferBank extends Pembayaran implements Validatable, Receiptable
                "--------------------------------------";
     }
 }
+
 ```
 
-###CreditBy.java
+### CreditBy.java
 ```java
 package com.upb.agripos.util;
 // creditBy.java
@@ -298,10 +299,9 @@ public class MainAbstraction {
     CreditBy.print("240202832", "Ditha Elita Putri");
     }
 }
-
+```
 
 ---
-
 
 ## Hasil Eksekusi
 
