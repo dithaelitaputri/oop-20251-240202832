@@ -1,46 +1,144 @@
-# Laporan Praktikum Minggu 1 (sesuaikan minggu ke berapa?)
-Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
+# Laporan Praktikum Minggu 5 
+Topik: "Main Abstrac"
 
 ## Identitas
-- Nama  : [Nama Mahasiswa]
-- NIM   : [NIM Mahasiswa]
-- Kelas : [Kelas]
+- Nama  : Ditha Elita Putri
+- NIM   : 240202832
+- Kelas : 3IKRA
 
 ---
 
 ## Tujuan
-(Tuliskan tujuan praktikum minggu ini.  
-Contoh: *Mahasiswa memahami konsep class dan object serta dapat membuat class Produk dengan enkapsulasi.*)
+- Mahasiswa mampu **menjelaskan perbedaan abstract class dan interface**.
+- Mahasiswa mampu **mendesain abstract class dengan method abstrak** sesuai kebutuhan kasus.
+- Mahasiswa mampu **membuat interface dan mengimplementasikannya pada class**.
+- Mahasiswa mampu **menerapkan multiple inheritance melalui interface** pada rancangan kelas.
+- Mahasiswa mampu **mendokumentasikan kode** (komentar kelas/method, README singkat pada folder minggu).
+
 
 ---
 
 ## Dasar Teori
-(Tuliskan ringkasan teori singkat (3–5 poin) yang mendasari praktikum.  
-Contoh:  
-1. Class adalah blueprint dari objek.  
-2. Object adalah instansiasi dari class.  
-3. Enkapsulasi digunakan untuk menyembunyikan data.)
+**Abstraksi** adalah proses menyederhanakan kompleksitas dengan menampilkan elemen penting dan menyembunyikan detail implementasi.
+- **Abstract class**: tidak dapat diinstansiasi, dapat memiliki method abstrak (tanpa badan) dan non-abstrak. Dapat menyimpan state (field).
+- **Interface**: kumpulan kontrak (method tanpa implementasi konkret). Sejak Java 8 mendukung default method. Mendukung **multiple inheritance** (class dapat mengimplementasikan banyak interface).
+- Gunakan **abstract class** bila ada _shared state_ dan perilaku dasar; gunakan **interface** untuk mendefinisikan kemampuan/kontrak lintas hierarki.
+
+Dalam konteks Agri-POS, **Pembayaran** dapat dimodelkan sebagai abstract class dengan method abstrak `prosesPembayaran()` dan `biaya()`. Implementasi konkritnya: `Cash` dan `EWallet`. Kemudian, interface seperti `Validatable` (mis. verifikasi OTP) dan `Receiptable` (mencetak bukti) dapat diimplementasikan oleh jenis pembayaran yang relevan.
+
 
 ---
 
 ## Langkah Praktikum
-(Tuliskan Langkah-langkah dalam prakrikum, contoh:
-1. Langkah-langkah yang dilakukan (setup, coding, run).  
-2. File/kode yang dibuat.  
-3. Commit message yang digunakan.)
+1. **Abstract Class – Pembayaran**
+   - Buat `Pembayaran` (abstract) dengan field `invoiceNo`, `total` dan method:
+     - `double biaya()` (abstrak) → biaya tambahan (fee).
+     - `boolean prosesPembayaran()` (abstrak) → mengembalikan status berhasil/gagal.
+     - `double totalBayar()` (konkrit) → `return total + biaya();`.
+
+2. **Subclass Konkret**
+   - `Cash` → biaya = 0, proses = selalu berhasil jika `tunai >= totalBayar()`.
+   - `EWallet` → biaya = 1.5% dari `total`; proses = membutuhkan validasi.
+
+3. **Interface**
+   - `Validatable` → `boolean validasi();` (contoh: OTP).
+   - `Receiptable` → `String cetakStruk();`
+
+4. **Multiple Inheritance via Interface**
+   - `EWallet` mengimplementasikan **dua interface**: `Validatable`, `Receiptable`.
+   - `Cash` setidaknya mengimplementasikan `Receiptable`.
+
+5. **Main Class**
+    - Buat `MainAbstraction.java` untuk mendemonstrasikan pemakaian `Pembayaran` (polimorfik).
+    - Tampilkan hasil proses dan struk. Di akhir, panggil `CreditBy.print("[NIM]", "[Nama]")`.
+
+6. **Commit dan Push**
+   - Commit dengan pesan: `week5-abstraction-interface`.
+
 
 ---
 
 ## Kode Program
-(Tuliskan kode utama yang dibuat, contoh:  
+
+### Receiptable.java
+```java
+package com.upb.agripos.model.kontrak;
+
+public interface Receiptable {
+    String cetakStruk();
+}
+
+```
+
+### Validatable.java
+```java
+package com.upb.agripos.model.kontrak;
+
+public interface Validatable {
+    boolean validasi(); // misal validasi OTP/PIN
+}
+
+```
+
+### Cash.java
+```java
+package com.upb.agripos.model.pembayaran;
+
+import com.upb.agripos.model.kontrak.Receiptable;
+
+public class Cash extends Pembayaran implements Receiptable {
+    private double tunai;
+
+    public Cash(String invoiceNo, double total, double tunai) {
+        super(invoiceNo, total);
+        this.tunai = tunai;
+    }
+
+    @Override
+    public double biaya() {
+        return 0.0;
+    }
+
+    @Override
+    public boolean prosesPembayaran() {
+        // Berhasil jika uang tunai (tunai) mencukupi (>= totalBayar)
+        return this.tunai >= this.totalBayar(); // sederhana: cukup uang tunai
+    }
+
+    @Override
+    public String cetakStruk() {
+        String status = prosesPembayaran() ? "BERHASIL" : "GAGAL (Uang Kurang)";
+        double kembalian = prosesPembayaran() ? this.tunai - this.totalBayar() : 0.0;
+        
+        return "\n====== STRUK PEMBAYARAN TUNAI ======\n" +
+               "Invoice No.    : " + this.invoiceNo + "\n" +
+               "Total Belanja  : Rp " + String.format("%.0f", this.total) + "\n" +
+               "Biaya (Fee)    : Rp " + String.format("%.0f", this.biaya()) + "\n" +
+              "--------------------------------------\n" +
+               "TOTAL BAYAR    : Rp " + String.format("%.0f", this.totalBayar()) + "\n" +
+               "Tunai Diberikan: Rp " + String.format("%.0f", this.tunai) + "\n" +
+               "Kembalian      : Rp " + String.format("%.0f", kembalian) + "\n" +
+               "STATUS         : " + status + "\n" +
+               " \n" +
+               "--------------------------------------";
+    }
+    }
+
+    ```
+
+### Ewallet.java
 
 ```java
-// Contoh
-Produk p1 = new Produk("BNH-001", "Benih Padi", 25000, 100);
-System.out.println(p1.getNama());
-```
-)
+
+
 ---
+
+```
+
+### Validatable.java
+
+---
+
 
 ## Hasil Eksekusi
 (Sertakan screenshot hasil eksekusi program.  

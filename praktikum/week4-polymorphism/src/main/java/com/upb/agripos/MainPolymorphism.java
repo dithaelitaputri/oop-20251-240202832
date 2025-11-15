@@ -24,7 +24,6 @@ public class MainPolymorphism {
             System.out.println(p.getInfo());
         }
 
-
         // Credit info
         CreditBy.print("240202832", "Ditha Elita Putri");
     }
