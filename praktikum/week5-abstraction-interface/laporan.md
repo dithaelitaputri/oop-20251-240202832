@@ -311,11 +311,19 @@ public class MainAbstraction {
 ---
 
 ## Analisis
-(
-- Jelaskan bagaimana kode berjalan.  
-- Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.  
-- Kendala yang dihadapi dan cara mengatasinya.  
-)
+
+- Jelaskan bagaimana kode berjalan.
+  Program dimulai dari metode main(), lalu membuat objek pembayaran seperti Cash, E-Wallet, atau Transfer Bank.
+  Setiap objek punya cara perhitungan total bayar yang berbeda (sesuai jenis pembayarannya).
+  Saat program memanggil prosesPembayaran(), Java akan otomatis menjalankan versi metode yang sesuai dengan objeknya.
+  Hasil akhirnya ditampilkan ke layar sesuai jenis pembayaran yang digunakan. 
+- Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.
+  Minggu sebelumnya fokus ke polymorphism, yaitu satu metode dengan banyak perilaku tergantung objeknya.
+  Minggu ini lebih menekankan ke abstraksi, di mana kita membuat kelas abstrak sebagai kerangka umum yang harus diikuti oleh   semua jenis pembayaran.
+  Jadi, kalau sebelumnya menonjolkan perbedaan perilaku, minggu ini menonjolkan aturan dasarnya.  
+- Kendala yang dihadapi dan cara mengatasinya.
+   
+
 ---
 
 ## Kesimpulan
