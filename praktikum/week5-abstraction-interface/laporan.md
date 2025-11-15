@@ -264,6 +264,18 @@ public class TransferBank extends Pembayaran implements Validatable, Receiptable
 }
 ```
 
+###CreditBy.java
+```java
+package com.upb.agripos.util;
+// creditBy.java
+
+public class CreditBy {
+    public static void print(String nim, String nama) {
+        System.out.println("\ncredit by: " + nim + " - " + nama);
+    }
+}
+```
+
 ### MainAbstraction.java
 ```java
 package com.upb.agripos;
@@ -293,7 +305,8 @@ public class MainAbstraction {
 
 ## Hasil Eksekusi
 
-c:\Users\HP\Pictures\Screenshots\hasil week5-mainabstraction.png
+<img width="1920" height="1080" alt="hasil week5-mainabstraction" src="https://github.com/user-attachments/assets/12315950-0969-4e85-90c8-6672df22178b" />
+
 
 ---
 
