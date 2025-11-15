@@ -124,8 +124,7 @@ public class Cash extends Pembayaran implements Receiptable {
     }
     }
 
-    ```
-
+ ```
 ### Ewallet.java
 
 ```java
