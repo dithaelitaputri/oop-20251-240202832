@@ -312,15 +312,20 @@ public class MainAbstraction {
 
 ## Analisis
 - Jelaskan bagaimana kode berjalan.
+  
   Program dimulai dari metode main(), lalu membuat objek pembayaran seperti Cash, E-Wallet, atau Transfer Bank.
   Setiap objek punya cara perhitungan total bayar yang berbeda (sesuai jenis pembayarannya).
   Saat program memanggil prosesPembayaran(), Java akan otomatis menjalankan versi metode yang sesuai dengan objeknya.
-  Hasil akhirnya ditampilkan ke layar sesuai jenis pembayaran yang digunakan. 
+  Hasil akhirnya ditampilkan ke layar sesuai jenis pembayaran yang digunakan.
+  
 - Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.
+  
   Minggu sebelumnya fokus ke polymorphism, yaitu satu metode dengan banyak perilaku tergantung objeknya.
   Minggu ini lebih menekankan ke abstraksi, di mana kita membuat kelas abstrak sebagai kerangka umum yang harus diikuti oleh   semua jenis pembayaran.
-  Jadi, kalau sebelumnya menonjolkan perbedaan perilaku, minggu ini menonjolkan aturan dasarnya.  
+  Jadi, kalau sebelumnya menonjolkan perbedaan perilaku, minggu ini menonjolkan aturan dasarnya.
+  
 - Kendala yang dihadapi dan cara mengatasinya.
+
    Waktu mengerjakan praktikum ini, kendala utama saya ada di bagian desain class, terutama ketika menentukan mana yang seharusnya jadi abstract class dan mana yang cocok dibuat sebagai interface
 
 ---
@@ -332,11 +337,14 @@ Dari praktikum minggu ini, saya belajar kalau abstraksi itu penting untuk membua
 
 ## Quiz
 1. Jelaskan perbedaan konsep dan penggunaan abstract class dan interface.
+
    **Jawaban: Abstract class digunakan ketika kita punya konsep dasar yang sama untuk semua turunannya, termasuk data/field yang mau dipakai bareng. Sedangkan interface dipakai untuk mendefinisikan kemampuan tambahan yang bisa dipasang ke class mana pun tanpa terikat hierarki. Jadi abstract class lebih ke “kerangka besar”-nya, sementara interface itu seperti “aturan tambahan” yang harus dipenuhi.**   
 
-2. Mengapa multiple inheritance lebih aman dilakukan dengan interface pada Java?
+3. Mengapa multiple inheritance lebih aman dilakukan dengan interface pada Java?
+
    **Jawaban: Karena interface tidak membawa state dan tidak punya implementasi kompleks yang bisa saling bentrok. Kalau Java mendukung multiple inheritance untuk class, nanti bisa terjadi konflik pewarisan (misalnya dua parent punya atribut atau logic yang sama). Dengan interface, class bisa punya banyak kemampuan tanpa risiko tabrakan antar kode.**
 
 3.Pada contoh Agri-POS, bagian mana yang paling tepat menjadi abstract class dan mana yang menjadi interface? Jelaskan alasannya. 
+
    **Jawaban: Yang cocok jadi abstract class adalah Pembayaran, karena semua metode pembayaran pasti punya pola dasar yang sama seperti menghitung fee dan memproses pembayaran. Tetapi cara menghitung fee dan prosesnya beda-beda, jadi pas kalau bagian itu dibuat abstrak.
 Yang cocok jadi interface adalah Validatable dan Receiptable, karena ini sifatnya kemampuan tambahan. Tidak semua metode pembayaran perlu validasi, dan tidak semua membutuhkan struk yang detail. Jadi interface ini bisa diimplementasikan hanya oleh class yang butuh saja.** …  
